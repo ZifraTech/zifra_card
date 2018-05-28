@@ -150,8 +150,15 @@ So fare we can read and write from the first sector in the memory but not to any
 
 \section{chacha}
 The stream cipher that was decided to use fore the data encryption ip called chacha \cite{chacha} developed by Joachim Strömbergson \cite{joachim}.  
-We have made an axi ip block out of it one stream port fore the data and one address port fore the setting of iv and key \todo{Probebly more ports here look in the design.}
-There is also an test case whit an micro blaze and an firmware to demonstrate how the axi crypto works.  
+We have made an axi ip block out of it one stream port fore the data and one address port fore the setting example iv and key se Figure \ref{fig:chacha}.
+There is an test bench that show how the axi block is intended to bee used.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{ilustrations/chacha.pdf}
+	\caption{Port configuration chacha cipher}
+	\label{fig:chacha}
+\end{figure}
 
 
 \section{Helpful data}
@@ -159,6 +166,7 @@ This section will list information that have bin collected during the project th
 
 \subsection{CSD list}
 During the debugging we listed the CSD values that was used in the \gls{gvsdslave} we also made an list of the other CSD values.
+\todo{add the CSD tables here}
 
 \section{Whishlist}
 Here we will list some features that we wold like to have in the future.
@@ -177,7 +185,7 @@ We wold also like to be able to prep the memory card whit fake data in the camer
 Thees wold show up if someone wold inspect the card.
 This wold also be helped by the see pictures while session is active if the system is tested.
 
-\todo{add the CSD tables here}
+
 
 
 \clearpage
