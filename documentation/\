@@ -1,0 +1,14 @@
+
+\documentclass[]{article}
+\usepackage{glossaries}
+%-----------------------glossary-------------------------------------------
+\makenoidxglossaries % use TeX to sort
+\newglossaryentry{ciphers}
+{name={cipher},description={Is an mathematical algorithm that takes two inputs data and an and  
+			outputs an new data string that can not be read whit out an corresponding key}
+}
+\begin{document}
+\section{test}
+\gls{cipher}
+\printglossary
+\end{document}

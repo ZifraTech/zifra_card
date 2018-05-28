@@ -1,0 +1,17 @@
+\begin{thebibliography}{1}
+
+\bibitem{chacha}
+{ChaCha}.
+\newblock \url{https://git.cryptech.is/core/cipher/chacha.git}.
+\newblock Accessed: 2018-05-22.
+
+\bibitem{GV}
+{GoogleVault}.
+\newblock \url{https://github.com/ProjectVault/orp}.
+\newblock Accessed: 2018-05-22.
+
+\bibitem{joachim}
+joachim strömbergson.
+\newblock Chacha (cypher).
+
+\end{thebibliography}
