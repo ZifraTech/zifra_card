@@ -11,48 +11,17 @@ The FPGA used is an Artix-7 (xc7a100tcsg324-2) but can easely be modified to be 
 The test bench fore the chacha uses an microblaze so this needs Vivado to work.
 
 
-```
-Give examples
-```
-
 ### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+	Not aplicable
 
 ## chacha test
 
-To run this test generate the hardware in vivado then boot up the SDK from vivado.
-In vivado run the 
+In the chacha folder there is an tb and some sorce files.
+To run the testbench create an vivado project and add thees files to it.
+Run simulation fore 2500 ns.
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
+If everithing is corect chacha will encrypt two data words and decrypt them afterwords.
+Se wawe pattern.
 
 ## Deployment
 
