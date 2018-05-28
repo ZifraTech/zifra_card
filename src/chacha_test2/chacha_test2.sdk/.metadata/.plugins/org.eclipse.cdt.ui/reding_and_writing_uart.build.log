@@ -1,0 +1,21 @@
+08:31:36 **** Auto Build of configuration Debug for project reding_and_writing_uart ****
+make all 
+Building file: ../src/rw_uart.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rw_uart.o" -I../../reding_and_writing_uart_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/rw_uart.d" -MT"src/rw_uart.o" -o "src/rw_uart.o" "../src/rw_uart.c"
+Finished building: ../src/rw_uart.c
+ 
+Building target: reding_and_writing_uart.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../reding_and_writing_uart_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "reding_and_writing_uart.elf"  ./src/rw_uart.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: reding_and_writing_uart.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size reding_and_writing_uart.elf  |tee "reding_and_writing_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6584	    292	   3124	  10000	   2710	reding_and_writing_uart.elf
+Finished building: reding_and_writing_uart.elf.size
+ 
+
+08:31:36 Build Finished (took 225ms)
+

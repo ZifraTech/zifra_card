@@ -1,0 +1,13 @@
+{
+   guistr: "# # String gsaved with Nlview 6.5.12  2016-01-29 bk=1.3547 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port sys_clock -pg 1 -y 60 -defaultsOSRD
+preplace port reset -pg 1 -y 40 -defaultsOSRD
+preplace inst chacha_axi_ip_0 -pg 1 -lvl 2 -y 40 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -y 50 -defaultsOSRD
+preplace netloc sys_clock_1 1 0 1 NJ
+preplace netloc reset_1 1 0 1 N
+levelinfo -pg 1 -30 300 680 800 -top -130 -bot 230
+",
+}
+0

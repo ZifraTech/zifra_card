@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+# 
+# Start of session at: Wed Jan 11 23:02:48 2017
+# Process ID: 24582
+# Current directory: /home/torbjorn/development/vhdl/cifra/chacha_test2/chacha_test2.sdk/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /home/torbjorn/development/vhdl/cifra/chacha_test2/chacha_test2.sdk/webtalk/webtalk.log
+# Journal file: /home/torbjorn/development/vhdl/cifra/chacha_test2/chacha_test2.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

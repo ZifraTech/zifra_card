@@ -1,0 +1,29 @@
+/*
+ * main.c
+ *
+ *  Created on: Jan 12, 2017
+ *      Author: torbjorn
+ */
+#include "stdio.h"
+
+void encrypt(void);
+
+
+int main(){
+	encrypt();
+	return 0;
+}
+
+void encrypt(void){
+	int index;
+	char raw[32];
+	for(index = 0; index < 32; index ++){
+		raw[index] = 9;
+	}
+	xil_printf("raw file %d", raw);
+	//send over FSL
+	for(index = 0; index < 16; index ++){
+		for(jindex = 0; jindex < 32; jindex++)
+		null;
+	}
+}

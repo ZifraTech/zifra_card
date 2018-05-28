@@ -1,6 +1,4 @@
-# Project Title
-
-One Paragraph of project description goes here
+# Zifra card
 
 ## Getting Started
 
@@ -8,7 +6,10 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+The repos are generated using Vivado 2017.4.
+The FPGA used is an Artix-7 (xc7a100tcsg324-2) but can easely be modified to be used on other FPGA.
+The test bench fore the chacha uses an microblaze so this needs Vivado to work.
+
 
 ```
 Give examples
@@ -32,9 +33,10 @@ until finished
 
 End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
+## chacha test
 
-Explain how to run the automated tests for this system
+To run this test generate the hardware in vivado then boot up the SDK from vivado.
+In vivado run the 
 
 ### Break down into end to end tests
 

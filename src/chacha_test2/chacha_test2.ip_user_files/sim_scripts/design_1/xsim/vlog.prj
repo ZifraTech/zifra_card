@@ -1,0 +1,13 @@
+verilog xil_defaultlib --include "../../../../chacha_test2.srcs/sources_1/bd/design_1/ipshared/4868" --include "../../../../chacha_test2.srcs/sources_1/bd/design_1/ipshared/0ab1/hdl" --include "../../../../chacha_test2.srcs/sources_1/bd/design_1/ipshared/6180/hdl/verilog" --include "../../../../chacha_test2.srcs/sources_1/bd/design_1/ipshared/a08d/hdl/verilog" --include "../../../../chacha_test2.srcs/sources_1/bd/design_1/ipshared/6851/hdl/verilog" --include "../../../../chacha_test2.srcs/sources_1/bd/design_1/ipshared/82bb/hdl/verilog" \
+"../../../bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v" \
+"../../../bd/design_1/ip/design_1_lmb_bram_0/sim/design_1_lmb_bram_0.v" \
+"../../../bd/design_1/ip/design_1_axis_dwidth_converter_0_0/sim/design_1_axis_dwidth_converter_0_0.v" \
+"../../../bd/design_1/ip/design_1_axis_dwidth_converter_1_0/sim/design_1_axis_dwidth_converter_1_0.v" \
+"../../../bd/design_1/ip/design_1_util_vector_logic_0_0/sim/design_1_util_vector_logic_0_0.v" \
+"../../../../chacha_test2.srcs/sources_1/bd/design_1/ipshared/77fc/hdl/chacha_qr.v" \
+"../../../../chacha_test2.srcs/sources_1/bd/design_1/ipshared/77fc/hdl/chacha_core.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
