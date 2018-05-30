@@ -83,6 +83,9 @@ Here i will list stuff i come up whit so that i can write about them later.
 	\item fat format
 \end{itemize}
 
+
+
+
 \section{Brief description}
 We will here shortly describe what the Zifra card is meant to be.
 It is an memory card that is supost to protect data by encrypting the data that is writen to it.
@@ -146,7 +149,7 @@ This part of the project dose not work yet.
 
 We have extracted the blocks that we think are needed fore the project.
 There test bench to test and send commands to the design and see what responses the device sends back.
-So fare we can read and write from the first sector in the memory but not to any other once \todo{need to bouble check this whit mesages from antti.}. 
+So fare we can read and write from the first sector in the memory but not to any other sector.
 
 \section{chacha}
 The stream cipher that was decided to use fore the data encryption ip called chacha \cite{chacha} developed by Joachim Strömbergson \cite{joachim}.  
@@ -167,6 +170,129 @@ This section will list information that have bin collected during the project th
 \subsection{CSD list}
 During the debugging we listed the CSD values that was used in the \gls{gvsdslave} we also made an list of the other CSD values.
 \todo{add the CSD tables here}
+
+\begin{tabular}{|l|l|l|}
+	&This is the list from part1 Version (1.0)& \\
+	&& \\
+	Name &Descripton&CSD-slice \\
+	CSD structure&CSD structure&[127:126] \\
+	-&reserved&[125:120] \\
+	TAAC&data read access-time-1&[119:112] \\
+	NSAC&data read access-time-2 in CLK cycles (NSAC * 100)&[111:104] \\
+	TRAN\_SPEED&max. read data block length&[103:96] \\
+	CCC&card command classes&[95:84] \\
+	READ\_BL\_LEN&max. read data block length&[83:80] \\
+	READ\_BL\_PARTIAL&partial blocks for read allowed&[79:79] \\
+	WRITE\_BLK\_MISALIGN&write block misalignment&[78:78] \\
+	READ\_BLK\_MISALIGN&read block misalignment&[77:77] \\
+	DSR\_IMP&DSR implemented&[76:76] \\
+	-&reserved&[75:74] \\
+	C\_SIZE&device size&[73:62] \\
+	VDD\_R\_CURR\_MIN&max.read current @ VDD min&[61:59] \\
+	VDD\_R\_CURR\_MAX&max.read current @ VDD max&[58:56] \\
+	VDD\_W\_CURR\_MIN&max.write current @ VDD min&[55:53] \\
+	VDD\_W\_CURR\_MAX&max.write current @ VDD max&[52:50] \\ 
+	C\_SIZE\_MULT&device size multiplier&[49:47] \\
+	ERASE\_BLK\_EN&erase single block enable&[46:46] \\
+	SECTOR\_SIZE&erase sector size&[45:39] \\
+	WP\_GRP\_SIZE&write protect group size&[38:32] \\
+	WP\_GRP\_ENABLE&write protect proup enable&[31:31] \\
+	-&reserved&[30:29] \\
+	R2W\_FACTOR&write speed factor&[28:26]  \\
+	WRITE\_BL\_LEN&max. write data block length&[25:22] \\
+	WRITE\_BL\_PARTIAL&partial blocks for write allowed&[21:21] \\
+	-&reserved&[20:16]  \\
+	FILE\_FORMAT\_GRP&file format group&[15:15] \\
+	COPY&copy flag&[14:14] \\
+	PERM\_WRITE\_PROTECT&premanet write protection&[13:13] \\
+	TMP\_WRITE\_PROTECT&temporary write protection&[12:12] \\
+	FILE\_FORMAT\_GRP&file format&[11:10] \\
+	-&reserved&[9:8] \\
+	CRC&crc&[7:1] \\
+	-&not used always '1'&[0:0] \\
+\end{tabular}
+
+\begin{tabular}{|l|l|l|}
+&This is the list from part1 Version (2.0)& \\
+&& \\
+Name &Descripton&CSD-slice \\
+CSD structure&CSD structure&[127:126] \\
+-&reserved&[125:120] \\
+TAAC&data read access-time-1&[119:112] \\
+NSAC&data read access-time-2 in CLK cycles (NSAC * 100)&[111:104] \\
+TRAN\_SPEED&max. read data block length&[103:96] \\
+CCC&card command classes&[95:84] \\
+READ\_BL\_LEN&max. read data block length&[83:80] \\
+READ\_BL\_PARTIAL&partial blocks for read allowed&[79:79] \\
+WRITE\_BLK\_MISALIGN&write block misalignment&[78:78] \\
+READ\_BLKe\_MISALIGN&read block misalignment&[77:77] \\
+DSR\_IMP&DSR implemented&[76:76] \\
+-&reserved&[75:70] \\
+C\_SIZE&device size&[69:48] \\
+&reserved&[47:47] \\
+ERASE\_BLK\_EN&erase single block enable&[46:46] \\
+SECTOR\_SIZE&erase sector size&[45:39] \\
+WP\_GRP\_SIZE&write protect group size&[38:32] \\
+WP\_GRP\_ENABLE&write protect proup enable&[31:31] \\
+-&reserved&[30:29] \\
+R2W\_FACTOR&write speed factor&[28:26]  \\
+WRITE\_BL\_LEN&max. write data block length&[25:22] \\
+WRITE\_BL\_PARTIAL&partial blocks for write allowed&[21:21] \\
+-&reserved&[20:16]  \\
+FILE\_FORMAT\_GRP&file format group&[15:15] \\
+COPY&copy flag&[14:14] \\
+PERM\_WRITE\_PROTECT&premanet write protection&[13:13] \\
+TMP\_WRITE\_PROTECT&temporary write protection&[12:12] \\
+FILE\_FORMAT\_GRP&file format&[11:10] \\
+-&reserved&[9:8] \\
+CRC&crc&[7:1] \\
+-&not used always '1'&[0:0] \\
+\end{tabular}
+
+\begin{tabular}{l|l|l|l}
+
+	&Settings from GV sd\_parms.vh&& \\
+	&&& \\
+	Name&Value&&Comment \\
+	CSD\_CSD\_STRUCTURE&b01&& \\
+	CSD\_TAAC&h0E&& \\
+	CSD\_NSAC&h00&& \\
+	CSD\_TRAN\_SPEED\_25&h32&& \\
+	CSD\_TRAN\_SPEED\_50&h5A&& \\
+	CSD\_CCC&b01\_1\_110110101&& \\
+	CSD\_READ\_BL\_LEN&9&&512 byte Blocks \\
+	CSD\_READ\_BL\_PARTIAL&h0&&Partial block reads not implemented \\
+	CSD\_WRITE\_BLK\_MISALIGN&h0&&Write misalingned block not implemented \\
+	CSD\_READ\_BLK\_MISALIGN&h0&&Read misaligned block not implemented \\
+	CSD\_DSR\_IMPL&h0&&DSR not implemented \\
+	CSD\_C\_SIZE&8&&4.5 MBYTE \\
+	SD\_TOTAL\_BLOCKS&(CSD\_C\_SIZE+1) * 1024&9216& \\
+	CSD\_ERASE\_BLK\_EN&h1&& \\
+	CSD\_SECTOR\_SIZE&h7F&& \\
+	CSD\_WP\_GRP\_SIZE&h0&& \\
+	CSD\_WP\_GRP\_ENABLE&h0&& \\
+	CSD\_R2W\_FACTOR&b010&& \\
+	CSD\_WRITE\_BL\_LEN&h9&& \\
+	CSD\_WRITE\_BL\_PARTIAL&h0&& \\
+	CSD\_FILE\_FORMAT\_GRP&h0&& \\
+	CSD\_COPY&h0&& \\
+	CSD\_PERM\_WRITE\_PROTECT&h0&& \\
+	CSD\_TMP\_WRITE\_PROTECT&h0&& \\
+	CSD\_FILE\_FORMAT&b00&& \\
+	&&& \\
+	&&& \\
+	&Settings from GV sd\_const.vh&& \\
+	&&& \\
+	Name&Value&& \\
+	CMD9\_SEND\_CSD&d9&& \\
+	CMD27\_PROGRAM\_CSD&d27&& \\
+	STAT\_CSD\_OVERWRITE&d16&& \\
+	
+	
+\end{tabular}
+
+\todo{add cid by hand}
+
 
 \section{Whishlist}
 Here we will list some features that we wold like to have in the future.

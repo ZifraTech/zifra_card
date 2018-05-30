@@ -9,7 +9,7 @@
 \contentsline {section}{\numberline {6}chacha}{7}{section.6}
 \contentsline {section}{\numberline {7}Helpful data}{7}{section.7}
 \contentsline {subsection}{\numberline {7.1}CSD list}{7}{subsection.7.1}
-\contentsline {section}{\numberline {8}Whishlist}{7}{section.8}
-\contentsline {subsection}{\numberline {8.1}Hidden files}{8}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}See pictures when camera is still on}{8}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}Fake pictures}{8}{subsection.8.3}
+\contentsline {section}{\numberline {8}Whishlist}{10}{section.8}
+\contentsline {subsection}{\numberline {8.1}Hidden files}{11}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}See pictures when camera is still on}{11}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Fake pictures}{11}{subsection.8.3}
