@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="zsys_system_ila_0_0_synth_1" LaunchDir="/home/torbjorn/development/vhdl/cifra/zync_demo_anti/arty_z7_20_foc.runs/zsys_system_ila_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zsys_wb2axi_0_0_synth_1" LaunchDir="/home/torbjorn/development/vhdl/cifra/zync_demo_anti/arty_z7_20_foc.runs/zsys_wb2axi_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zsys_proc_sys_reset_0_0_synth_1" LaunchDir="/home/torbjorn/development/vhdl/cifra/zync_demo_anti/arty_z7_20_foc.runs/zsys_proc_sys_reset_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zsys_processing_system7_0_1_synth_1" LaunchDir="/home/torbjorn/development/vhdl/cifra/zync_demo_anti/arty_z7_20_foc.runs/zsys_processing_system7_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zsys_clock_detector_0_0_synth_1" LaunchDir="/home/torbjorn/development/vhdl/cifra/zync_demo_anti/arty_z7_20_foc.runs/zsys_clock_detector_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zsys_axi_bram_ctrl_0_0_synth_1" LaunchDir="/home/torbjorn/development/vhdl/cifra/zync_demo_anti/arty_z7_20_foc.runs/zsys_axi_bram_ctrl_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zsys_vio_0_0_synth_1" LaunchDir="/home/torbjorn/development/vhdl/cifra/zync_demo_anti/arty_z7_20_foc.runs/zsys_vio_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zsys_axi_protocol_converter_0_0_synth_1" LaunchDir="/home/torbjorn/development/vhdl/cifra/zync_demo_anti/arty_z7_20_foc.runs/zsys_axi_protocol_converter_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zsys_axi_bram_ctrl_1_0_synth_1" LaunchDir="/home/torbjorn/development/vhdl/cifra/zync_demo_anti/arty_z7_20_foc.runs/zsys_axi_bram_ctrl_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zsys_util_ds_buf_0_0_synth_1" LaunchDir="/home/torbjorn/development/vhdl/cifra/zync_demo_anti/arty_z7_20_foc.runs/zsys_util_ds_buf_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zsys_emio_sdemu_0_0_synth_1" LaunchDir="/home/torbjorn/development/vhdl/cifra/zync_demo_anti/arty_z7_20_foc.runs/zsys_emio_sdemu_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/torbjorn/development/vhdl/cifra/zync_demo_anti/arty_z7_20_foc.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="zsys_system_ila_0_0_synth_1"/>
+		<Parent Id="zsys_wb2axi_0_0_synth_1"/>
+		<Parent Id="zsys_proc_sys_reset_0_0_synth_1"/>
+		<Parent Id="zsys_processing_system7_0_1_synth_1"/>
+		<Parent Id="zsys_clock_detector_0_0_synth_1"/>
+		<Parent Id="zsys_axi_bram_ctrl_0_0_synth_1"/>
+		<Parent Id="zsys_vio_0_0_synth_1"/>
+		<Parent Id="zsys_axi_protocol_converter_0_0_synth_1"/>
+		<Parent Id="zsys_axi_bram_ctrl_1_0_synth_1"/>
+		<Parent Id="zsys_util_ds_buf_0_0_synth_1"/>
+		<Parent Id="zsys_emio_sdemu_0_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="/home/torbjorn/development/vhdl/cifra/zync_demo_anti/arty_z7_20_foc.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="zsys_system_ila_0_0_synth_1"/>
+		<Parent Id="zsys_wb2axi_0_0_synth_1"/>
+		<Parent Id="zsys_proc_sys_reset_0_0_synth_1"/>
+		<Parent Id="zsys_processing_system7_0_1_synth_1"/>
+		<Parent Id="zsys_clock_detector_0_0_synth_1"/>
+		<Parent Id="zsys_axi_bram_ctrl_0_0_synth_1"/>
+		<Parent Id="zsys_vio_0_0_synth_1"/>
+		<Parent Id="zsys_axi_protocol_converter_0_0_synth_1"/>
+		<Parent Id="zsys_axi_bram_ctrl_1_0_synth_1"/>
+		<Parent Id="zsys_util_ds_buf_0_0_synth_1"/>
+		<Parent Id="zsys_emio_sdemu_0_0_synth_1"/>
+	</Run>
+</Runs>
+

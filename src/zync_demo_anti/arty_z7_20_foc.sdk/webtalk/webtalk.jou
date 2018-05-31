@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# 
+# Start of session at: Thu Apr 12 09:47:04 2018
+# Process ID: 9716
+# Current directory: B:/SVN/cores/customers/zifra/zybo/zybo_foc/arty_z7_20_foc.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: B:/SVN/cores/customers/zifra/zybo/zybo_foc/arty_z7_20_foc.sdk/webtalk/webtalk.log
+# Journal file: B:/SVN/cores/customers/zifra/zybo/zybo_foc/arty_z7_20_foc.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

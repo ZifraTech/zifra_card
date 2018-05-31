@@ -1,0 +1,8 @@
+11:40:04 **** Auto Build of configuration Debug for project uboot ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+
+11:40:04 Build Finished (took 192ms)
+

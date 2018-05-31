@@ -1,0 +1,1624 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Thu Nov 23 14:08:19 2017
+# Process ID: 7773
+# Current directory: /home/torbjorn/development/vhdl/cifra/sd_slave/sd_slave_vhdl/sd_slave_vhdl.runs/synth_1
+# Command line: vivado -log sd_over_the_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sd_over_the_top.tcl
+# Log file: /home/torbjorn/development/vhdl/cifra/sd_slave/sd_slave_vhdl/sd_slave_vhdl.runs/synth_1/sd_over_the_top.vds
+# Journal file: /home/torbjorn/development/vhdl/cifra/sd_slave/sd_slave_vhdl/sd_slave_vhdl.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source sd_over_the_top.tcl -notrace
+Command: synth_design -top sd_over_the_top -part xc7a100tcsg324-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7789 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1235.617 ; gain = 74.000 ; free physical = 2137 ; free virtual = 26181
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'sd_over_the_top' [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_over_the_top.vhd:38]
+INFO: [Synth 8-3491] module 'sd_top' declared at '/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_top.v:16' bound to instance 'SDTOP' of component 'sd_top' [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_over_the_top.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'sd_top' [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_top.v:16]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_top.v:134]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_top.v:135]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_top.v:136]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_top.v:137]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_top.v:138]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_top.v:139]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_top.v:140]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_top.v:142]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_top.v:143]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_top.v:144]
+INFO: [Synth 8-638] synthesizing module 'sd_wishbone' [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_wishbone.v:16]
+	Parameter ST_RESET bound to: 5'b00000 
+	Parameter ST_IDLE bound to: 5'b00100 
+	Parameter ST_WB_READ_0 bound to: 5'b01000 
+	Parameter ST_WB_READ_1 bound to: 5'b01001 
+	Parameter ST_WB_READ_2 bound to: 5'b01010 
+	Parameter ST_WB_READ_3 bound to: 5'b01011 
+	Parameter ST_WB_READ_4 bound to: 5'b01100 
+	Parameter ST_WB_WRITE_0 bound to: 5'b01101 
+	Parameter ST_WB_WRITE_1 bound to: 5'b01110 
+	Parameter ST_WB_WRITE_2 bound to: 5'b01111 
+	Parameter ST_WB_WRITE_3 bound to: 5'b10000 
+	Parameter ST_WB_WRITE_4 bound to: 5'b10001 
+	Parameter ST_LAST bound to: 5'b11111 
+INFO: [Synth 8-638] synthesizing module 'synch_3' [/home/torbjorn/development/vhdl/cifra/sd_slave/src/common.v:35]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'synch_3' (1#1) [/home/torbjorn/development/vhdl/cifra/sd_slave/src/common.v:35]
+WARNING: [Synth 8-350] instance 'a' of module 'synch_3' requires 4 connections, but only 3 given [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_wishbone.v:90]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_wishbone.v:107]
+WARNING: [Synth 8-3848] Net bram_wr_ext_data in module/entity sd_wishbone does not have driver. [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_wishbone.v:39]
+INFO: [Synth 8-256] done synthesizing module 'sd_wishbone' (2#1) [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_wishbone.v:16]
+INFO: [Synth 8-638] synthesizing module 'sd_mgr' [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_mgr.v:16]
+	Parameter ST_RESET bound to: 5'b00000 
+	Parameter ST_IDLE bound to: 5'b00100 
+	Parameter ST_BREAD_0 bound to: 5'b00101 
+	Parameter ST_BREAD_1 bound to: 5'b00110 
+	Parameter ST_BREAD_2 bound to: 5'b00111 
+	Parameter ST_BREAD_3 bound to: 5'b01000 
+	Parameter ST_BREAD_4 bound to: 5'b01001 
+	Parameter ST_BREAD_5 bound to: 5'b01010 
+	Parameter ST_BWRITE_0 bound to: 5'b01101 
+	Parameter ST_BWRITE_1 bound to: 5'b01110 
+	Parameter ST_BWRITE_2 bound to: 5'b01111 
+	Parameter ST_BWRITE_3 bound to: 5'b10000 
+	Parameter ST_BWRITE_4 bound to: 5'b10001 
+	Parameter ST_BWRITE_5 bound to: 5'b10010 
+	Parameter ST_LAST bound to: 5'b11111 
+WARNING: [Synth 8-350] instance 'a' of module 'synch_3' requires 4 connections, but only 3 given [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_mgr.v:95]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_mgr.v:106]
+INFO: [Synth 8-638] synthesizing module 'sd_bram_block_dp' [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_brams.v:16]
+	Parameter DATA bound to: 32 - type: integer 
+	Parameter ADDR bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sd_bram_block_dp' (3#1) [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_brams.v:16]
+WARNING: [Synth 8-6014] Unused sequential element dc_reg was removed.  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_mgr.v:102]
+WARNING: [Synth 8-3848] Net ext_read_num in module/entity sd_mgr does not have driver. [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_mgr.v:58]
+WARNING: [Synth 8-3848] Net ext_write_num in module/entity sd_mgr does not have driver. [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_mgr.v:64]
+INFO: [Synth 8-256] done synthesizing module 'sd_mgr' (4#1) [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_mgr.v:16]
+INFO: [Synth 8-638] synthesizing module 'sd_link' [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:16]
+	Parameter STAT_DAT_BUS_WIDTH_1 bound to: 2'b00 
+	Parameter STAT_DAT_BUS_WIDTH_4 bound to: 2'b10 
+	Parameter STAT_SECURED_MODE bound to: 1'b0 
+	Parameter STAT_SD_CARD_TYPE bound to: 16'b0000000000000000 
+	Parameter STAT_SIZE_OF_PROT_AREA bound to: 32'b00000000000000000000000000000000 
+	Parameter STAT_SPEED_CLASS bound to: 8'b00000100 
+	Parameter STAT_PERFORMANCE_MOVE bound to: 8'b00000000 
+	Parameter STAT_AU_SIZE bound to: 4'b0001 
+	Parameter STAT_ERASE_SIZE bound to: 16'b0000000000000000 
+	Parameter STAT_ERASE_TIMEOUT bound to: 6'b000000 
+	Parameter STAT_ERASE_OFFSET bound to: 2'b00 
+	Parameter OCR_VOLTAGE_WINDOW bound to: 24'b111111111000000000000000 
+	Parameter CID_FIELD_MID bound to: 8'b01111111 
+	Parameter CID_FIELD_OID bound to: 16'b0101000001000011 
+	Parameter CID_FIELD_PNM bound to: 40'b0100100001000101010011000100110001001111 
+	Parameter CID_FIELD_PRV bound to: 8'b00010000 
+	Parameter CID_FIELD_PSN bound to: 1 - type: integer 
+	Parameter CID_FIELD_MDT bound to: 12'b000101001111 
+	Parameter CSD_CSD_STRUCTURE bound to: 2'b01 
+	Parameter CSD_TAAC bound to: 8'b00001110 
+	Parameter CSD_NSAC bound to: 8'b00000000 
+	Parameter CSD_TRAN_SPEED_25 bound to: 8'b00110010 
+	Parameter CSD_TRAN_SPEED_50 bound to: 8'b01011010 
+	Parameter CSD_CCC bound to: 12'b011110110101 
+	Parameter CSD_READ_BL_LEN bound to: 4'b1001 
+	Parameter CSD_READ_BL_PARTIAL bound to: 1'b0 
+	Parameter CSD_WRITE_BLK_MISALIGN bound to: 1'b0 
+	Parameter CSD_READ_BLK_MISALIGN bound to: 1'b0 
+	Parameter CSD_DSR_IMPL bound to: 1'b0 
+	Parameter CSD_C_SIZE bound to: 22'b0000000000000000010000 
+	Parameter SD_TOTAL_BLOCKS bound to: 32'b00000000000000000100010000000000 
+	Parameter CSD_ERASE_BLK_EN bound to: 1'b1 
+	Parameter CSD_SECTOR_SIZE bound to: 7'b1111111 
+	Parameter CSD_WP_GRP_SIZE bound to: 7'b0000000 
+	Parameter CSD_WP_GRP_ENABLE bound to: 1'b0 
+	Parameter CSD_R2W_FACTOR bound to: 3'b010 
+	Parameter CSD_WRITE_BL_LEN bound to: 4'b1001 
+	Parameter CSD_WRITE_BL_PARTIAL bound to: 1'b0 
+	Parameter CSD_FILE_FORMAT_GRP bound to: 1'b0 
+	Parameter CSD_COPY bound to: 1'b0 
+	Parameter CSD_PERM_WRITE_PROTECT bound to: 1'b0 
+	Parameter CSD_TMP_WRITE_PROTECT bound to: 1'b0 
+	Parameter CSD_FILE_FORMAT bound to: 2'b00 
+	Parameter SCR_SCR_STRUCTURE bound to: 4'b0000 
+	Parameter SCR_SD_SPEC bound to: 4'b0010 
+	Parameter SCR_DATA_STATE_ERASE bound to: 1'b0 
+	Parameter SCR_SD_SECURITY bound to: 3'b001 
+	Parameter SCR_SD_BUS_WIDTHS bound to: 4'b0101 
+	Parameter SCR_SD_SPEC3 bound to: 1'b0 
+	Parameter CMD0_GO_IDLE bound to: 6'b000000 
+	Parameter CMD2_ALL_SEND_CID bound to: 6'b000010 
+	Parameter CMD3_SEND_REL_ADDR bound to: 6'b000011 
+	Parameter CMD4_SET_DSR bound to: 6'b000100 
+	Parameter CMD6_SWITCH_FUNC bound to: 6'b000110 
+	Parameter CMD7_SEL_CARD bound to: 6'b000111 
+	Parameter CMD8_SEND_IF_COND bound to: 6'b001000 
+	Parameter CMD9_SEND_CSD bound to: 6'b001001 
+	Parameter CMD10_SEND_CID bound to: 6'b001010 
+	Parameter CMD12_STOP bound to: 6'b001100 
+	Parameter CMD13_SEND_STATUS bound to: 6'b001101 
+	Parameter CMD15_GO_INACTIVE bound to: 6'b001111 
+	Parameter CMD16_SET_BLOCKLEN bound to: 6'b010000 
+	Parameter CMD17_READ_SINGLE bound to: 6'b010001 
+	Parameter CMD18_READ_MULTIPLE bound to: 6'b010010 
+	Parameter CMD24_WRITE_SINGLE bound to: 6'b011000 
+	Parameter CMD25_WRITE_MULTIPLE bound to: 6'b011001 
+	Parameter CMD27_PROGRAM_CSD bound to: 6'b011011 
+	Parameter CMD32_ERASE_START bound to: 6'b100000 
+	Parameter CMD33_ERASE_END bound to: 6'b100001 
+	Parameter CMD38_ERASE bound to: 6'b100110 
+	Parameter CMD42_LOCK_UNLOCK bound to: 6'b101010 
+	Parameter CMD55_APP_CMD bound to: 6'b110111 
+	Parameter CMD56_GEN_CMD bound to: 6'b111000 
+	Parameter CMD28_SET_WRITE_PROT bound to: 6'b011100 
+	Parameter CMD29_CLR_WRITE_PROT bound to: 6'b011101 
+	Parameter CMD30_SND_WRITE_PROT bound to: 6'b011110 
+	Parameter CMD40_INVALID bound to: 6'b101000 
+	Parameter CMD_LAST bound to: 6'b111111 
+	Parameter ACMD6_SET_BUS_WIDTH bound to: 6'b000110 
+	Parameter ACMD13_SD_STATUS bound to: 6'b001101 
+	Parameter ACMD22_NUM_WR_BLK bound to: 6'b010110 
+	Parameter ACMD23_SET_WR_BLK bound to: 6'b010111 
+	Parameter ACMD41_SEND_OP_COND bound to: 6'b101001 
+	Parameter ACMD42_SET_CARD_DET bound to: 6'b101010 
+	Parameter ACMD51_SEND_SCR bound to: 6'b110011 
+	Parameter ACMD_LAST bound to: 6'b111111 
+	Parameter RESP_NONE bound to: 4'b0000 
+	Parameter RESP_R1 bound to: 4'b0001 
+	Parameter RESP_R1B bound to: 4'b1000 
+	Parameter RESP_R2 bound to: 4'b0010 
+	Parameter RESP_R3 bound to: 4'b0011 
+	Parameter RESP_R6 bound to: 4'b0110 
+	Parameter RESP_R7 bound to: 4'b0111 
+	Parameter RESP_BAD bound to: 4'b1110 
+	Parameter RESP_LAST bound to: 4'b1111 
+	Parameter STAT_OUT_OF_RANGE bound to: 5'b11111 
+	Parameter STAT_ADDRESS_ERROR bound to: 5'b11110 
+	Parameter STAT_BLOCK_LEN_ERROR bound to: 5'b11101 
+	Parameter STAT_ERASE_SEQ_ERROR bound to: 5'b11100 
+	Parameter STAT_ERASE_PARAM bound to: 5'b11011 
+	Parameter STAT_WP_VIOLATION bound to: 5'b11010 
+	Parameter STAT_CARD_IS_LOCKED bound to: 5'b11001 
+	Parameter STAT_LOCK_UNLOCK_FAILED bound to: 5'b11000 
+	Parameter STAT_COM_CRC_ERROR bound to: 5'b10111 
+	Parameter STAT_ILLEGAL_COMMAND bound to: 5'b10110 
+	Parameter STAT_CARD_ECC_FAILED bound to: 5'b10101 
+	Parameter STAT_CC_ERROR bound to: 5'b10100 
+	Parameter STAT_ERROR bound to: 5'b10011 
+	Parameter STAT_CSD_OVERWRITE bound to: 5'b10000 
+	Parameter STAT_WP_ERASE_SKIP bound to: 5'b01111 
+	Parameter STAT_CARD_ECC_DISABLED bound to: 5'b01110 
+	Parameter STAT_ERASE_RESET bound to: 5'b01101 
+	Parameter STAT_READY_FOR_DATA bound to: 5'b01000 
+	Parameter STAT_APP_CMD bound to: 5'b00101 
+	Parameter STAT_AKE_SEQ_ERROR bound to: 5'b00011 
+	Parameter OCR_POWERED_UP bound to: 5'b11111 
+	Parameter OCR_CARD_CAPACITY bound to: 5'b11110 
+	Parameter CARD_IDLE bound to: 4'b0000 
+	Parameter CARD_READY bound to: 4'b0001 
+	Parameter CARD_IDENT bound to: 4'b0010 
+	Parameter CARD_STBY bound to: 4'b0011 
+	Parameter CARD_TRAN bound to: 4'b0100 
+	Parameter CARD_DATA bound to: 4'b0101 
+	Parameter CARD_RCV bound to: 4'b0110 
+	Parameter CARD_PRG bound to: 4'b0111 
+	Parameter CARD_DIS bound to: 4'b1000 
+	Parameter CARD_INA bound to: 4'b1001 
+	Parameter CARD_RESVD1 bound to: 4'b1010 
+	Parameter CARD_RESVD2 bound to: 4'b1011 
+	Parameter CARD_RESVD3 bound to: 4'b1100 
+	Parameter CARD_RESVD4 bound to: 4'b1101 
+	Parameter CARD_RESVD5 bound to: 4'b1110 
+	Parameter CARD_RESVD6 bound to: 4'b1111 
+	Parameter ST_RESET bound to: 7'b0000000 
+	Parameter ST_IDLE bound to: 7'b0000100 
+	Parameter ST_CMD_ACT bound to: 7'b0001000 
+	Parameter ST_CMD_RESP_0 bound to: 7'b0001001 
+	Parameter ST_CMD_RESP_1 bound to: 7'b0001010 
+	Parameter ST_CMD_RESP_2 bound to: 7'b0001011 
+	Parameter ST_LAST bound to: 7'b1111111 
+	Parameter DST_RESET bound to: 7'b0000000 
+	Parameter DST_IDLE bound to: 7'b0000001 
+	Parameter DST_IDLE_1 bound to: 7'b0000010 
+	Parameter DST_DATA_OUT_0 bound to: 7'b0001010 
+	Parameter DST_DATA_OUT_1 bound to: 7'b0001011 
+	Parameter DST_DATA_OUT_2 bound to: 7'b0001100 
+	Parameter DST_DATA_OUT_3 bound to: 7'b0001101 
+	Parameter DST_DATA_OUT_4 bound to: 7'b0001110 
+	Parameter DST_DATA_OUT_5 bound to: 7'b0001111 
+	Parameter DST_DATA_IN_0 bound to: 7'b0010100 
+	Parameter DST_DATA_IN_1 bound to: 7'b0010101 
+	Parameter DST_DATA_IN_2 bound to: 7'b0010110 
+	Parameter DST_DATA_IN_3 bound to: 7'b0010111 
+	Parameter DST_DATA_IN_4 bound to: 7'b0011000 
+	Parameter DST_DATA_IN_5 bound to: 7'b0011001 
+	Parameter DST_LAST bound to: 7'b1111111 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:108]
+WARNING: [Synth 8-350] instance 'a' of module 'synch_3' requires 4 connections, but only 3 given [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:156]
+INFO: [Synth 8-638] synthesizing module 'synch_3__parameterized0' [/home/torbjorn/development/vhdl/cifra/sd_slave/src/common.v:35]
+	Parameter WIDTH bound to: 48 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element stage_3_reg was removed.  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/common.v:48]
+INFO: [Synth 8-256] done synthesizing module 'synch_3__parameterized0' (4#1) [/home/torbjorn/development/vhdl/cifra/sd_slave/src/common.v:35]
+WARNING: [Synth 8-350] instance 'b' of module 'synch_3' requires 4 connections, but only 3 given [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:157]
+WARNING: [Synth 8-350] instance 'c' of module 'synch_3' requires 4 connections, but only 3 given [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:158]
+WARNING: [Synth 8-350] instance 'e' of module 'synch_3' requires 4 connections, but only 3 given [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:160]
+WARNING: [Synth 8-350] instance 'g' of module 'synch_3' requires 4 connections, but only 3 given [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:162]
+WARNING: [Synth 8-350] instance 'i' of module 'synch_3' requires 4 connections, but only 3 given [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:164]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:280]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:290]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:339]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:350]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:360]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:369]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:376]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:390]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:399]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:407]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:413]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:426]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:439]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:453]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:469]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:479]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:489]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:505]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:536]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:542]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:550]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:558]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:564]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:581]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:585]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:617]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:657]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:172]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:690]
+WARNING: [Synth 8-6014] Unused sequential element dc_reg was removed.  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:170]
+WARNING: [Synth 8-6014] Unused sequential element ddc_reg was removed.  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:688]
+INFO: [Synth 8-256] done synthesizing module 'sd_link' (5#1) [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:16]
+WARNING: [Synth 8-350] instance 'isdl' of module 'sd_link' requires 45 connections, but only 36 given [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_top.v:216]
+INFO: [Synth 8-638] synthesizing module 'sd_phy' [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:16]
+	Parameter STAT_DAT_BUS_WIDTH_1 bound to: 2'b00 
+	Parameter STAT_DAT_BUS_WIDTH_4 bound to: 2'b10 
+	Parameter STAT_SECURED_MODE bound to: 1'b0 
+	Parameter STAT_SD_CARD_TYPE bound to: 16'b0000000000000000 
+	Parameter STAT_SIZE_OF_PROT_AREA bound to: 32'b00000000000000000000000000000000 
+	Parameter STAT_SPEED_CLASS bound to: 8'b00000100 
+	Parameter STAT_PERFORMANCE_MOVE bound to: 8'b00000000 
+	Parameter STAT_AU_SIZE bound to: 4'b0001 
+	Parameter STAT_ERASE_SIZE bound to: 16'b0000000000000000 
+	Parameter STAT_ERASE_TIMEOUT bound to: 6'b000000 
+	Parameter STAT_ERASE_OFFSET bound to: 2'b00 
+	Parameter OCR_VOLTAGE_WINDOW bound to: 24'b111111111000000000000000 
+	Parameter CID_FIELD_MID bound to: 8'b01111111 
+	Parameter CID_FIELD_OID bound to: 16'b0101000001000011 
+	Parameter CID_FIELD_PNM bound to: 40'b0100100001000101010011000100110001001111 
+	Parameter CID_FIELD_PRV bound to: 8'b00010000 
+	Parameter CID_FIELD_PSN bound to: 1 - type: integer 
+	Parameter CID_FIELD_MDT bound to: 12'b000101001111 
+	Parameter CSD_CSD_STRUCTURE bound to: 2'b01 
+	Parameter CSD_TAAC bound to: 8'b00001110 
+	Parameter CSD_NSAC bound to: 8'b00000000 
+	Parameter CSD_TRAN_SPEED_25 bound to: 8'b00110010 
+	Parameter CSD_TRAN_SPEED_50 bound to: 8'b01011010 
+	Parameter CSD_CCC bound to: 12'b011110110101 
+	Parameter CSD_READ_BL_LEN bound to: 4'b1001 
+	Parameter CSD_READ_BL_PARTIAL bound to: 1'b0 
+	Parameter CSD_WRITE_BLK_MISALIGN bound to: 1'b0 
+	Parameter CSD_READ_BLK_MISALIGN bound to: 1'b0 
+	Parameter CSD_DSR_IMPL bound to: 1'b0 
+	Parameter CSD_C_SIZE bound to: 22'b0000000000000000010000 
+	Parameter SD_TOTAL_BLOCKS bound to: 32'b00000000000000000100010000000000 
+	Parameter CSD_ERASE_BLK_EN bound to: 1'b1 
+	Parameter CSD_SECTOR_SIZE bound to: 7'b1111111 
+	Parameter CSD_WP_GRP_SIZE bound to: 7'b0000000 
+	Parameter CSD_WP_GRP_ENABLE bound to: 1'b0 
+	Parameter CSD_R2W_FACTOR bound to: 3'b010 
+	Parameter CSD_WRITE_BL_LEN bound to: 4'b1001 
+	Parameter CSD_WRITE_BL_PARTIAL bound to: 1'b0 
+	Parameter CSD_FILE_FORMAT_GRP bound to: 1'b0 
+	Parameter CSD_COPY bound to: 1'b0 
+	Parameter CSD_PERM_WRITE_PROTECT bound to: 1'b0 
+	Parameter CSD_TMP_WRITE_PROTECT bound to: 1'b0 
+	Parameter CSD_FILE_FORMAT bound to: 2'b00 
+	Parameter SCR_SCR_STRUCTURE bound to: 4'b0000 
+	Parameter SCR_SD_SPEC bound to: 4'b0010 
+	Parameter SCR_DATA_STATE_ERASE bound to: 1'b0 
+	Parameter SCR_SD_SECURITY bound to: 3'b001 
+	Parameter SCR_SD_BUS_WIDTHS bound to: 4'b0101 
+	Parameter SCR_SD_SPEC3 bound to: 1'b0 
+	Parameter CMD0_GO_IDLE bound to: 6'b000000 
+	Parameter CMD2_ALL_SEND_CID bound to: 6'b000010 
+	Parameter CMD3_SEND_REL_ADDR bound to: 6'b000011 
+	Parameter CMD4_SET_DSR bound to: 6'b000100 
+	Parameter CMD6_SWITCH_FUNC bound to: 6'b000110 
+	Parameter CMD7_SEL_CARD bound to: 6'b000111 
+	Parameter CMD8_SEND_IF_COND bound to: 6'b001000 
+	Parameter CMD9_SEND_CSD bound to: 6'b001001 
+	Parameter CMD10_SEND_CID bound to: 6'b001010 
+	Parameter CMD12_STOP bound to: 6'b001100 
+	Parameter CMD13_SEND_STATUS bound to: 6'b001101 
+	Parameter CMD15_GO_INACTIVE bound to: 6'b001111 
+	Parameter CMD16_SET_BLOCKLEN bound to: 6'b010000 
+	Parameter CMD17_READ_SINGLE bound to: 6'b010001 
+	Parameter CMD18_READ_MULTIPLE bound to: 6'b010010 
+	Parameter CMD24_WRITE_SINGLE bound to: 6'b011000 
+	Parameter CMD25_WRITE_MULTIPLE bound to: 6'b011001 
+	Parameter CMD27_PROGRAM_CSD bound to: 6'b011011 
+	Parameter CMD32_ERASE_START bound to: 6'b100000 
+	Parameter CMD33_ERASE_END bound to: 6'b100001 
+	Parameter CMD38_ERASE bound to: 6'b100110 
+	Parameter CMD42_LOCK_UNLOCK bound to: 6'b101010 
+	Parameter CMD55_APP_CMD bound to: 6'b110111 
+	Parameter CMD56_GEN_CMD bound to: 6'b111000 
+	Parameter CMD28_SET_WRITE_PROT bound to: 6'b011100 
+	Parameter CMD29_CLR_WRITE_PROT bound to: 6'b011101 
+	Parameter CMD30_SND_WRITE_PROT bound to: 6'b011110 
+	Parameter CMD40_INVALID bound to: 6'b101000 
+	Parameter CMD_LAST bound to: 6'b111111 
+	Parameter ACMD6_SET_BUS_WIDTH bound to: 6'b000110 
+	Parameter ACMD13_SD_STATUS bound to: 6'b001101 
+	Parameter ACMD22_NUM_WR_BLK bound to: 6'b010110 
+	Parameter ACMD23_SET_WR_BLK bound to: 6'b010111 
+	Parameter ACMD41_SEND_OP_COND bound to: 6'b101001 
+	Parameter ACMD42_SET_CARD_DET bound to: 6'b101010 
+	Parameter ACMD51_SEND_SCR bound to: 6'b110011 
+	Parameter ACMD_LAST bound to: 6'b111111 
+	Parameter RESP_NONE bound to: 4'b0000 
+	Parameter RESP_R1 bound to: 4'b0001 
+	Parameter RESP_R1B bound to: 4'b1000 
+	Parameter RESP_R2 bound to: 4'b0010 
+	Parameter RESP_R3 bound to: 4'b0011 
+	Parameter RESP_R6 bound to: 4'b0110 
+	Parameter RESP_R7 bound to: 4'b0111 
+	Parameter RESP_BAD bound to: 4'b1110 
+	Parameter RESP_LAST bound to: 4'b1111 
+	Parameter STAT_OUT_OF_RANGE bound to: 5'b11111 
+	Parameter STAT_ADDRESS_ERROR bound to: 5'b11110 
+	Parameter STAT_BLOCK_LEN_ERROR bound to: 5'b11101 
+	Parameter STAT_ERASE_SEQ_ERROR bound to: 5'b11100 
+	Parameter STAT_ERASE_PARAM bound to: 5'b11011 
+	Parameter STAT_WP_VIOLATION bound to: 5'b11010 
+	Parameter STAT_CARD_IS_LOCKED bound to: 5'b11001 
+	Parameter STAT_LOCK_UNLOCK_FAILED bound to: 5'b11000 
+	Parameter STAT_COM_CRC_ERROR bound to: 5'b10111 
+	Parameter STAT_ILLEGAL_COMMAND bound to: 5'b10110 
+	Parameter STAT_CARD_ECC_FAILED bound to: 5'b10101 
+	Parameter STAT_CC_ERROR bound to: 5'b10100 
+	Parameter STAT_ERROR bound to: 5'b10011 
+	Parameter STAT_CSD_OVERWRITE bound to: 5'b10000 
+	Parameter STAT_WP_ERASE_SKIP bound to: 5'b01111 
+	Parameter STAT_CARD_ECC_DISABLED bound to: 5'b01110 
+	Parameter STAT_ERASE_RESET bound to: 5'b01101 
+	Parameter STAT_READY_FOR_DATA bound to: 5'b01000 
+	Parameter STAT_APP_CMD bound to: 5'b00101 
+	Parameter STAT_AKE_SEQ_ERROR bound to: 5'b00011 
+	Parameter OCR_POWERED_UP bound to: 5'b11111 
+	Parameter OCR_CARD_CAPACITY bound to: 5'b11110 
+	Parameter CARD_IDLE bound to: 4'b0000 
+	Parameter CARD_READY bound to: 4'b0001 
+	Parameter CARD_IDENT bound to: 4'b0010 
+	Parameter CARD_STBY bound to: 4'b0011 
+	Parameter CARD_TRAN bound to: 4'b0100 
+	Parameter CARD_DATA bound to: 4'b0101 
+	Parameter CARD_RCV bound to: 4'b0110 
+	Parameter CARD_PRG bound to: 4'b0111 
+	Parameter CARD_DIS bound to: 4'b1000 
+	Parameter CARD_INA bound to: 4'b1001 
+	Parameter CARD_RESVD1 bound to: 4'b1010 
+	Parameter CARD_RESVD2 bound to: 4'b1011 
+	Parameter CARD_RESVD3 bound to: 4'b1100 
+	Parameter CARD_RESVD4 bound to: 4'b1101 
+	Parameter CARD_RESVD5 bound to: 4'b1110 
+	Parameter CARD_RESVD6 bound to: 4'b1111 
+	Parameter ST_RESET bound to: 7'b0000000 
+	Parameter ST_RESET_WAIT bound to: 7'b0000001 
+	Parameter ST_IDLE bound to: 7'b0000100 
+	Parameter ST_CMD_CHECK bound to: 7'b0001010 
+	Parameter ST_CMD_READ bound to: 7'b0001011 
+	Parameter ST_RESP_PREAMBLE bound to: 7'b0001110 
+	Parameter ST_RESP_WRITE bound to: 7'b0001111 
+	Parameter ST_RESP_WRITE_END bound to: 7'b0010000 
+	Parameter ST_DATA_READ bound to: 7'b0010100 
+	Parameter ST_DATA_READ_1 bound to: 7'b0010101 
+	Parameter ST_DATA_READ_2 bound to: 7'b0010110 
+	Parameter ST_DATA_READ_3 bound to: 7'b0010111 
+	Parameter ST_DATA_TOKEN bound to: 7'b0011000 
+	Parameter ST_DATA_TOKEN_1 bound to: 7'b0011001 
+	Parameter ST_DATA_TOKEN_2 bound to: 7'b0011010 
+	Parameter ST_DATA_TOKEN_3 bound to: 7'b0011011 
+	Parameter ST_DATA_WRITE bound to: 7'b0011110 
+	Parameter ST_DATA_WRITE_1 bound to: 7'b0011111 
+	Parameter ST_DATA_WRITE_2 bound to: 7'b0100000 
+	Parameter ST_DATA_WRITE_3 bound to: 7'b0100001 
+	Parameter ST_LAST bound to: 7'b1111111 
+WARNING: [Synth 8-350] instance 'i' of module 'synch_3' requires 4 connections, but only 3 given [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:171]
+WARNING: [Synth 8-350] instance 'j' of module 'synch_3' requires 4 connections, but only 3 given [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:172]
+INFO: [Synth 8-638] synthesizing module 'synch_3__parameterized1' [/home/torbjorn/development/vhdl/cifra/sd_slave/src/common.v:35]
+	Parameter WIDTH bound to: 4 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element stage_3_reg was removed.  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/common.v:48]
+INFO: [Synth 8-256] done synthesizing module 'synch_3__parameterized1' (5#1) [/home/torbjorn/development/vhdl/cifra/sd_slave/src/common.v:35]
+WARNING: [Synth 8-350] instance 'c' of module 'synch_3' requires 4 connections, but only 3 given [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:174]
+INFO: [Synth 8-638] synthesizing module 'synch_3__parameterized2' [/home/torbjorn/development/vhdl/cifra/sd_slave/src/common.v:35]
+	Parameter WIDTH bound to: 10 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element stage_3_reg was removed.  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/common.v:48]
+INFO: [Synth 8-256] done synthesizing module 'synch_3__parameterized2' (5#1) [/home/torbjorn/development/vhdl/cifra/sd_slave/src/common.v:35]
+WARNING: [Synth 8-350] instance 'd' of module 'synch_3' requires 4 connections, but only 3 given [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:175]
+WARNING: [Synth 8-350] instance 'f' of module 'synch_3' requires 4 connections, but only 3 given [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:177]
+WARNING: [Synth 8-350] instance 'g' of module 'synch_3' requires 4 connections, but only 3 given [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:178]
+WARNING: [Synth 8-350] instance 'h' of module 'synch_3' requires 4 connections, but only 3 given [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:179]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:534]
+WARNING: [Synth 8-5788] Register sd_cmd_last_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:188]
+WARNING: [Synth 8-5788] Register sd_dat_last_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:189]
+WARNING: [Synth 8-5788] Register idc_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:192]
+WARNING: [Synth 8-5788] Register cmd_in_latch_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:212]
+WARNING: [Synth 8-5788] Register cmd_in_act_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:213]
+WARNING: [Synth 8-5788] Register crc7_in_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:214]
+WARNING: [Synth 8-5788] Register cmd_in_crc_good_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:234]
+WARNING: [Synth 8-5788] Register cmd_in_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:235]
+WARNING: [Synth 8-5788] Register didc_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:248]
+WARNING: [Synth 8-5788] Register bram_wr_sd_wren_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:249]
+WARNING: [Synth 8-5788] Register do_crc_token_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:252]
+WARNING: [Synth 8-5788] Register data_in_busy_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:257]
+WARNING: [Synth 8-5788] Register data_in_done_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:258]
+WARNING: [Synth 8-5788] Register crc16_in3_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:266]
+WARNING: [Synth 8-5788] Register crc16_in2_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:267]
+WARNING: [Synth 8-5788] Register crc16_in1_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:268]
+WARNING: [Synth 8-5788] Register crc16_in0_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:269]
+WARNING: [Synth 8-5788] Register bram_wr_sd_addr_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:271]
+WARNING: [Synth 8-5788] Register bram_wr_sd_data_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:282]
+WARNING: [Synth 8-5788] Register crc16_check3_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:309]
+WARNING: [Synth 8-5788] Register crc16_check2_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:310]
+WARNING: [Synth 8-5788] Register crc16_check1_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:311]
+WARNING: [Synth 8-5788] Register crc16_check0_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:312]
+WARNING: [Synth 8-5788] Register data_in_crc_good_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:319]
+WARNING: [Synth 8-5788] Register odc_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:351]
+WARNING: [Synth 8-5788] Register resp_done_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:358]
+WARNING: [Synth 8-5788] Register sd_cmd_oe_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:359]
+WARNING: [Synth 8-5788] Register resp_out_latch_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:365]
+WARNING: [Synth 8-5788] Register crc7_out_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:366]
+WARNING: [Synth 8-5788] Register sd_cmd_out_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:83]
+WARNING: [Synth 8-5788] Register dodc_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:422]
+WARNING: [Synth 8-5788] Register bram_rd_sd_wren_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:423]
+WARNING: [Synth 8-5788] Register sd_dat_oe_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:430]
+WARNING: [Synth 8-5788] Register data_out_busy_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:431]
+WARNING: [Synth 8-5788] Register data_out_done_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:432]
+WARNING: [Synth 8-5788] Register bram_rd_sd_addr_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:442]
+WARNING: [Synth 8-5788] Register sd_dat_out_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:96]
+WARNING: [Synth 8-5788] Register crc16_out3_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:459]
+WARNING: [Synth 8-5788] Register crc16_out2_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:460]
+WARNING: [Synth 8-5788] Register crc16_out1_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:461]
+WARNING: [Synth 8-5788] Register crc16_out0_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:462]
+WARNING: [Synth 8-5788] Register dout_buf_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:154]
+WARNING: [Synth 8-5788] Register data_out_reg_latch_reg in module sd_phy is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:154]
+WARNING: [Synth 8-3848] Net bram_rd_sd_data in module/entity sd_phy does not have driver. [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:57]
+INFO: [Synth 8-256] done synthesizing module 'sd_phy' (6#1) [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_phy.v:16]
+WARNING: [Synth 8-689] width (1) of port connection 'odc' does not match port width (11) of module 'sd_phy' [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_top.v:312]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'isdl'. This will prevent further optimization [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_top.v:216]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'isdph'. This will prevent further optimization [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_top.v:263]
+INFO: [Synth 8-256] done synthesizing module 'sd_top' (7#1) [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_top.v:16]
+INFO: [Synth 8-256] done synthesizing module 'sd_over_the_top' (8#1) [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_over_the_top.vhd:38]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_rd_sd_data[31]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_rd_sd_data[30]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_rd_sd_data[29]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_rd_sd_data[28]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_rd_sd_data[27]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_rd_sd_data[26]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_rd_sd_data[25]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_rd_sd_data[24]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_rd_sd_data[23]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_rd_sd_data[22]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_rd_sd_data[21]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_rd_sd_data[20]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_rd_sd_data[19]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_rd_sd_data[18]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_rd_sd_data[17]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_rd_sd_data[16]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_rd_sd_data[15]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_rd_sd_data[14]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_rd_sd_data[13]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_rd_sd_data[12]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_rd_sd_data[11]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_rd_sd_data[10]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_rd_sd_data[9]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_rd_sd_data[8]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_rd_sd_data[7]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_rd_sd_data[6]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_rd_sd_data[5]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_rd_sd_data[4]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_rd_sd_data[3]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_rd_sd_data[2]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_rd_sd_data[1]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_rd_sd_data[0]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port clk_50
+WARNING: [Synth 8-3331] design sd_phy has unconnected port resp_busy
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_wr_sd_q[31]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_wr_sd_q[30]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_wr_sd_q[29]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_wr_sd_q[28]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_wr_sd_q[27]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_wr_sd_q[26]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_wr_sd_q[25]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_wr_sd_q[24]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_wr_sd_q[23]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_wr_sd_q[22]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_wr_sd_q[21]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_wr_sd_q[20]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_wr_sd_q[19]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_wr_sd_q[18]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_wr_sd_q[17]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_wr_sd_q[16]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_wr_sd_q[15]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_wr_sd_q[14]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_wr_sd_q[13]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_wr_sd_q[12]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_wr_sd_q[11]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_wr_sd_q[10]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_wr_sd_q[9]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_wr_sd_q[8]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_wr_sd_q[7]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_wr_sd_q[6]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_wr_sd_q[5]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_wr_sd_q[4]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_wr_sd_q[3]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_wr_sd_q[2]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_wr_sd_q[1]
+WARNING: [Synth 8-3331] design sd_phy has unconnected port bram_wr_sd_q[0]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_read_num[31]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_read_num[30]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_read_num[29]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_read_num[28]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_read_num[27]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_read_num[26]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_read_num[25]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_read_num[24]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_read_num[23]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_read_num[22]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_read_num[21]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_read_num[20]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_read_num[19]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_read_num[18]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_read_num[17]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_read_num[16]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_read_num[15]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_read_num[14]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_read_num[13]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_read_num[12]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_read_num[11]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_read_num[10]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_read_num[9]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_read_num[8]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_read_num[7]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_read_num[6]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_read_num[5]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_read_num[4]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_read_num[3]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_read_num[2]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_read_num[1]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_read_num[0]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_write_num[31]
+WARNING: [Synth 8-3331] design sd_mgr has unconnected port ext_write_num[30]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1298.156 ; gain = 136.539 ; free physical = 2127 ; free virtual = 26172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1298.156 ; gain = 136.539 ; free physical = 2133 ; free virtual = 26178
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-2
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-2
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1306.156 ; gain = 144.539 ; free physical = 2132 ; free virtual = 26177
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_wishbone.v:107]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <multiplier> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_wishbone.v:107]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <multiplier> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_wishbone.v:107]
+INFO: [Synth 8-5546] ROM "wbm_cyc_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "wbm_we_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ext_read_go" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sd_mgr'
+INFO: [Synth 8-5546] ROM "link_write_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ext_read_act" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'phy_data_in_stop_reg' into 'phy_data_out_stop_reg' [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:216]
+WARNING: [Synth 8-6014] Unused sequential element phy_data_in_stop_reg was removed.  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:216]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cmd_in_latch_reg' and it is trimmed from '48' to '46' bits. [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_link.v:81]
+INFO: [Synth 8-5546] ROM "err_host_is_spi" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "err_unhandled_cmd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "err_unhandled_cmd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "card_erase_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_acmd41_count" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_appcmd" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_rca" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_status" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_status" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_status" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_status" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "card_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "card_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_function_check" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_function_check" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_function_check" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_function_check" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_function_check" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "data_op_send_block" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "data_op_send_block" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "phy_data_in_stop" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "card_state_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "resp_type" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "resp_type" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "resp_type" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "resp_type" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "resp_type" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "resp_type" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "resp_type" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "resp_type" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "resp_type" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "resp_type" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "resp_type" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "resp_type" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "data_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "resp_arg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "block_erase_end" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "phy_resp_type" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "phy_resp_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_erase_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_erase_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_erase_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_erase_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_erase_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "err_host_is_spi" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "err_unhandled_cmd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "err_unhandled_cmd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "card_erase_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_acmd41_count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_appcmd" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_rca" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_status" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_status" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_status" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_status" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "card_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "card_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_function_check" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_function_check" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_function_check" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_function_check" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_function_check" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "data_op_send_block" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "data_op_send_block" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "phy_data_in_stop" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "card_state_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "resp_type" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "resp_type" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "resp_type" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "resp_type" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "resp_type" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "resp_type" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "resp_type" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "resp_type" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "resp_type" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "resp_type" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "resp_type" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "resp_type" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "data_state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "resp_arg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "block_erase_end" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "phy_resp_type" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "phy_resp_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_erase_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_erase_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_status" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_function_caps0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "resp_type" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "resp_type" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'istate_reg' in module 'sd_phy'
+INFO: [Synth 8-802] inferred FSM for state register 'distate_reg' in module 'sd_phy'
+INFO: [Synth 8-802] inferred FSM for state register 'ostate_reg' in module 'sd_phy'
+INFO: [Synth 8-802] inferred FSM for state register 'dostate_reg' in module 'sd_phy'
+INFO: [Synth 8-5546] ROM "istate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "istate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "distate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "bram_wr_sd_wren" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "bram_wr_sd_wren" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "bram_wr_sd_addr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "bram_wr_sd_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ostate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ostate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dostate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dostate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sd_dat_oe" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "bram_rd_sd_addr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "bram_rd_sd_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sd_dat_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cmd_in_crc_good" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bram_wr_sd_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "crc16_check3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "distate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "distate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "sd_cmd_oe" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sd_cmd_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ostate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "crc16_out0" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "dout_buf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_out_reg_latch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "dostate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dostate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-3971] The signal mem_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                ST_RESET |                             0000 |                            00000
+                 ST_IDLE |                             0001 |                            00100
+              ST_BREAD_0 |                             0010 |                            00101
+              ST_BREAD_1 |                             0011 |                            00110
+              ST_BREAD_2 |                             0100 |                            00111
+              ST_BREAD_3 |                             0101 |                            01000
+              ST_BREAD_4 |                             0110 |                            01001
+              ST_BREAD_5 |                             0111 |                            01010
+             ST_BWRITE_0 |                             1000 |                            01101
+             ST_BWRITE_1 |                             1001 |                            01110
+             ST_BWRITE_2 |                             1010 |                            01111
+             ST_BWRITE_3 |                             1011 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'sd_mgr'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                ST_RESET |                              000 |                          0000000
+           ST_RESET_WAIT |                              001 |                          0000001
+                 ST_IDLE |                              010 |                          0000100
+             ST_CMD_READ |                              011 |                          0001011
+            ST_CMD_CHECK |                              100 |                          0001010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'istate_reg' using encoding 'sequential' in module 'sd_phy'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                ST_RESET |                              000 |                          0000000
+                 ST_IDLE |                              001 |                          0000100
+            ST_DATA_READ |                              010 |                          0010100
+          ST_DATA_READ_1 |                              011 |                          0010101
+          ST_DATA_READ_2 |                              100 |                          0010110
+          ST_DATA_READ_3 |                              101 |                          0010111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'distate_reg' using encoding 'sequential' in module 'sd_phy'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                ST_RESET |                              000 |                          0000000
+                 ST_IDLE |                              001 |                          0000100
+        ST_RESP_PREAMBLE |                              010 |                          0001110
+           ST_RESP_WRITE |                              011 |                          0001111
+       ST_RESP_WRITE_END |                              100 |                          0010000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ostate_reg' using encoding 'sequential' in module 'sd_phy'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                ST_RESET |                             0000 |                          0000000
+                 ST_IDLE |                             0001 |                          0000100
+           ST_DATA_WRITE |                             0010 |                          0011110
+         ST_DATA_WRITE_1 |                             0011 |                          0011111
+         ST_DATA_WRITE_2 |                             0100 |                          0100000
+         ST_DATA_WRITE_3 |                             0101 |                          0100001
+           ST_DATA_TOKEN |                             0110 |                          0011000
+         ST_DATA_TOKEN_1 |                             0111 |                          0011001
+         ST_DATA_TOKEN_2 |                             1000 |                          0011010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'dostate_reg' using encoding 'sequential' in module 'sd_phy'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1342.219 ; gain = 180.602 ; free physical = 2050 ; free virtual = 26095
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input     17 Bit       Adders := 3     
+	   2 Input     16 Bit       Adders := 4     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 9     
+	   2 Input      1 Bit         XORs := 13    
++---Registers : 
+	              512 Bit    Registers := 1     
+	              136 Bit    Registers := 1     
+	              128 Bit    Registers := 3     
+	               64 Bit    Registers := 1     
+	               48 Bit    Registers := 4     
+	               47 Bit    Registers := 1     
+	               46 Bit    Registers := 1     
+	               32 Bit    Registers := 24    
+	               24 Bit    Registers := 2     
+	               23 Bit    Registers := 1     
+	               16 Bit    Registers := 11    
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 4     
+	                7 Bit    Registers := 5     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 12    
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 133   
++---RAMs : 
+	               8K Bit         RAMs := 2     
++---Muxes : 
+	   9 Input    513 Bit        Muxes := 2     
+	   2 Input    513 Bit        Muxes := 1     
+	   2 Input    512 Bit        Muxes := 4     
+	   6 Input    136 Bit        Muxes := 1     
+	   5 Input    136 Bit        Muxes := 1     
+	   2 Input    127 Bit        Muxes := 1     
+	   5 Input     47 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 31    
+	   7 Input     32 Bit        Muxes := 8     
+	  12 Input     32 Bit        Muxes := 2     
+	  21 Input     32 Bit        Muxes := 3     
+	   5 Input     32 Bit        Muxes := 2     
+	   9 Input     32 Bit        Muxes := 1     
+	   3 Input     24 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 2     
+	   7 Input     24 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 1     
+	   7 Input     23 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 8     
+	   7 Input     16 Bit        Muxes := 2     
+	   6 Input     16 Bit        Muxes := 5     
+	   9 Input     16 Bit        Muxes := 5     
+	   2 Input     11 Bit        Muxes := 1     
+	   5 Input     11 Bit        Muxes := 2     
+	   5 Input     10 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 27    
+	   7 Input      7 Bit        Muxes := 3     
+	  14 Input      7 Bit        Muxes := 1     
+	   5 Input      7 Bit        Muxes := 4     
+	   6 Input      7 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 1     
+	   9 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   7 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 48    
+	  16 Input      4 Bit        Muxes := 1     
+	  21 Input      4 Bit        Muxes := 3     
+	   9 Input      4 Bit        Muxes := 6     
+	   8 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 7     
+	   4 Input      4 Bit        Muxes := 4     
+	  14 Input      4 Bit        Muxes := 2     
+	   7 Input      4 Bit        Muxes := 2     
+	   5 Input      4 Bit        Muxes := 2     
+	   6 Input      4 Bit        Muxes := 1     
+	  12 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   3 Input      3 Bit        Muxes := 1     
+	  14 Input      3 Bit        Muxes := 3     
+	   7 Input      3 Bit        Muxes := 2     
+	   8 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 2     
+	   8 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 240   
+	   7 Input      1 Bit        Muxes := 59    
+	  12 Input      1 Bit        Muxes := 26    
+	   8 Input      1 Bit        Muxes := 11    
+	  21 Input      1 Bit        Muxes := 14    
+	  14 Input      1 Bit        Muxes := 14    
+	   4 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 8     
+	   5 Input      1 Bit        Muxes := 15    
+	  22 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 14    
+	   9 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module synch_3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module sd_wishbone 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   7 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   7 Input     16 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 3     
+	   7 Input      7 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 1     
+	   7 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 15    
+	   7 Input      1 Bit        Muxes := 14    
+Module sd_bram_block_dp 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---RAMs : 
+	               8K Bit         RAMs := 1     
+Module sd_mgr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 5     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 1     
+	  12 Input     32 Bit        Muxes := 2     
+	  16 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	  12 Input      1 Bit        Muxes := 26    
+Module synch_3__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               48 Bit    Registers := 3     
+Module sd_link 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	              512 Bit    Registers := 1     
+	              136 Bit    Registers := 1     
+	              128 Bit    Registers := 3     
+	               64 Bit    Registers := 1     
+	               46 Bit    Registers := 1     
+	               32 Bit    Registers := 10    
+	               24 Bit    Registers := 2     
+	               23 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 24    
++---Muxes : 
+	   2 Input    512 Bit        Muxes := 3     
+	   6 Input    136 Bit        Muxes := 1     
+	   2 Input    127 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 27    
+	   7 Input     32 Bit        Muxes := 7     
+	  21 Input     32 Bit        Muxes := 3     
+	   5 Input     32 Bit        Muxes := 2     
+	   3 Input     24 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 2     
+	   7 Input     24 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 1     
+	   7 Input     23 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   7 Input     16 Bit        Muxes := 1     
+	   5 Input     10 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 20    
+	  14 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 41    
+	  21 Input      4 Bit        Muxes := 3     
+	   9 Input      4 Bit        Muxes := 2     
+	   8 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 7     
+	   4 Input      4 Bit        Muxes := 4     
+	  14 Input      4 Bit        Muxes := 2     
+	   7 Input      4 Bit        Muxes := 2     
+	   5 Input      4 Bit        Muxes := 2     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   3 Input      3 Bit        Muxes := 1     
+	  14 Input      3 Bit        Muxes := 3     
+	   7 Input      3 Bit        Muxes := 2     
+	   8 Input      3 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 204   
+	   7 Input      1 Bit        Muxes := 41    
+	   8 Input      1 Bit        Muxes := 11    
+	  21 Input      1 Bit        Muxes := 14    
+	  14 Input      1 Bit        Muxes := 14    
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 2     
+	  22 Input      1 Bit        Muxes := 1     
+Module synch_3__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 3     
+Module synch_3__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 3     
+Module sd_phy 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 2     
++---XORs : 
+	   2 Input     16 Bit         XORs := 9     
+	   2 Input      1 Bit         XORs := 13    
++---Registers : 
+	               48 Bit    Registers := 1     
+	               47 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 9     
+	               11 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   9 Input    513 Bit        Muxes := 2     
+	   2 Input    513 Bit        Muxes := 1     
+	   2 Input    512 Bit        Muxes := 1     
+	   5 Input    136 Bit        Muxes := 1     
+	   5 Input     47 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 3     
+	   9 Input     32 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 6     
+	   6 Input     16 Bit        Muxes := 5     
+	   9 Input     16 Bit        Muxes := 5     
+	   2 Input     11 Bit        Muxes := 1     
+	   5 Input     11 Bit        Muxes := 2     
+	   5 Input      7 Bit        Muxes := 4     
+	   6 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 4     
+	   3 Input      7 Bit        Muxes := 1     
+	   9 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   9 Input      4 Bit        Muxes := 4     
+	  12 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 2     
+	   8 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 17    
+	   5 Input      1 Bit        Muxes := 13    
+	   3 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 14    
+	   4 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 4     
+	   9 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element b/stage_1_reg was removed.  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/common.v:48]
+WARNING: [Synth 8-6014] Unused sequential element b/stage_2_reg was removed.  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/common.v:48]
+WARNING: [Synth 8-6014] Unused sequential element b/o_reg was removed.  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/common.v:48]
+INFO: [Synth 8-5544] ROM "card_status" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_function_check" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_function_check" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_function_check" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_function_check" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "card_function_check" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "data_op_send_block" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "istate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "istate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ostate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dostate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'SDTOP/isdm/a/stage_1_reg[0:0]' into 'SDTOP/isdw/a/stage_1_reg[0:0]' [/home/torbjorn/development/vhdl/cifra/sd_slave/src/common.v:48]
+INFO: [Synth 8-4471] merging register 'SDTOP/isdm/a/stage_2_reg[0:0]' into 'SDTOP/isdw/a/stage_2_reg[0:0]' [/home/torbjorn/development/vhdl/cifra/sd_slave/src/common.v:48]
+INFO: [Synth 8-4471] merging register 'SDTOP/isdm/a/o_reg[0:0]' into 'SDTOP/isdw/a/o_reg[0:0]' [/home/torbjorn/development/vhdl/cifra/sd_slave/src/common.v:46]
+INFO: [Synth 8-4471] merging register 'SDTOP/isdm/a/stage_3_reg[0:0]' into 'SDTOP/isdw/a/stage_3_reg[0:0]' [/home/torbjorn/development/vhdl/cifra/sd_slave/src/common.v:46]
+WARNING: [Synth 8-6014] Unused sequential element SDTOP/isdm/a/stage_1_reg was removed.  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/common.v:48]
+WARNING: [Synth 8-6014] Unused sequential element SDTOP/isdm/a/stage_2_reg was removed.  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/common.v:48]
+WARNING: [Synth 8-6014] Unused sequential element SDTOP/isdm/a/o_reg was removed.  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/common.v:46]
+WARNING: [Synth 8-6014] Unused sequential element SDTOP/isdm/a/stage_3_reg was removed.  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/common.v:46]
+WARNING: [Synth 8-3936] Found unconnected internal register 'SDTOP/isdw/ext_write_addr_latch_reg' and it is trimmed from '32' to '23' bits. [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_wishbone.v:119]
+WARNING: [Synth 8-3936] Found unconnected internal register 'SDTOP/isdw/ext_read_addr_latch_reg' and it is trimmed from '32' to '23' bits. [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_wishbone.v:113]
+WARNING: [Synth 8-3936] Found unconnected internal register 'SDTOP/isdm/ext_write_addr_reg' and it is trimmed from '32' to '23' bits. [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_mgr.v:136]
+WARNING: [Synth 8-6014] Unused sequential element SDTOP/isdm/isdb1/b_dout_reg was removed.  [/home/torbjorn/development/vhdl/cifra/sd_slave/src/sd_brams.v:45]
+INFO: [Synth 8-3971] The signal SDTOP/isdm/isdb1/mem_reg was recognized as a true dual port RAM template.
+WARNING: [Synth 8-6014] Unused sequential element SDTOP/isdm/isdb2/mem_reg was removed. 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SDTOP/isdw/state_reg[4] )
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdw/wbm_bte_o_reg[0]' (FD) to 'SDTOP/isdw/wbm_bte_o_reg[1]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdw/wbm_bte_o_reg[1]' (FD) to 'SDTOP/isdw/wbm_cti_o_reg[0]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdw/wbm_cti_o_reg[0]' (FD) to 'SDTOP/isdw/wbm_cti_o_reg[1]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdw/wbm_cti_o_reg[1]' (FD) to 'SDTOP/isdw/wbm_cti_o_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SDTOP/isdw/wbm_cti_o_reg[2] )
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdw/wbm_sel_o_reg[0]' (FD) to 'SDTOP/isdw/wbm_sel_o_reg[1]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdw/wbm_sel_o_reg[1]' (FD) to 'SDTOP/isdw/wbm_sel_o_reg[2]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdw/wbm_sel_o_reg[2]' (FD) to 'SDTOP/isdw/wbm_sel_o_reg[3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\SDTOP/isdw/wbm_sel_o_reg[3] )
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdw/wbm_adr_o_reg[0]' (FDE) to 'SDTOP/isdw/wbm_adr_o_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SDTOP/isdw/wbm_adr_o_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (SDTOP/isdw/a/stage_3_reg[0]) is unused and will be removed from module sd_over_the_top.
+WARNING: [Synth 8-3332] Sequential element (SDTOP/isdw/state_reg[4]) is unused and will be removed from module sd_over_the_top.
+WARNING: [Synth 8-3332] Sequential element (SDTOP/isdw/wbm_adr_o_reg[1]) is unused and will be removed from module sd_over_the_top.
+WARNING: [Synth 8-3332] Sequential element (SDTOP/isdw/wbm_sel_o_reg[3]) is unused and will be removed from module sd_over_the_top.
+WARNING: [Synth 8-3332] Sequential element (SDTOP/isdm/c/stage_1_reg[0]) is unused and will be removed from module sd_over_the_top.
+WARNING: [Synth 8-3332] Sequential element (SDTOP/isdm/c/stage_2_reg[0]) is unused and will be removed from module sd_over_the_top.
+WARNING: [Synth 8-3332] Sequential element (SDTOP/isdm/c/o_reg[0]) is unused and will be removed from module sd_over_the_top.
+WARNING: [Synth 8-3332] Sequential element (SDTOP/isdm/c/stage_3_reg[0]) is unused and will be removed from module sd_over_the_top.
+WARNING: [Synth 8-3332] Sequential element (SDTOP/isdw/wbm_cti_o_reg[2]) is unused and will be removed from module sd_over_the_top.
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_function_reg[1]' (FDE) to 'SDTOP/isdl/card_function_reg[2]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_function_reg[2]' (FDE) to 'SDTOP/isdl/card_function_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SDTOP/isdl /\card_function_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SDTOP/isdl /\card_erase_state_reg[2] )
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_function_check_reg[4]' (FDE) to 'SDTOP/isdl/card_function_check_reg[7]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_function_check_reg[5]' (FDE) to 'SDTOP/isdl/card_function_check_reg[7]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_function_check_reg[6]' (FDE) to 'SDTOP/isdl/card_function_check_reg[7]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[0]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[1]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_function_check_reg[8]' (FDE) to 'SDTOP/isdl/card_function_check_reg[11]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[1]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[2]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_function_check_reg[9]' (FDE) to 'SDTOP/isdl/card_function_check_reg[11]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[2]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[3]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_function_check_reg[10]' (FDE) to 'SDTOP/isdl/card_function_check_reg[11]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[3]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[4]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[4]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[5]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_function_check_reg[12]' (FDE) to 'SDTOP/isdl/card_function_check_reg[15]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[5]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[6]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_function_check_reg[13]' (FDE) to 'SDTOP/isdl/card_function_check_reg[15]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[6]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[7]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_function_check_reg[14]' (FDE) to 'SDTOP/isdl/card_function_check_reg[15]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[7]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[8]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[8]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[9]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_function_check_reg[16]' (FDE) to 'SDTOP/isdl/card_function_check_reg[19]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[9]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[10]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_function_check_reg[17]' (FDE) to 'SDTOP/isdl/card_function_check_reg[19]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[10]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[11]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_function_check_reg[18]' (FDE) to 'SDTOP/isdl/card_function_check_reg[19]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[11]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[12]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[12]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[13]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_function_check_reg[20]' (FDE) to 'SDTOP/isdl/card_function_check_reg[23]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[13]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[14]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_function_check_reg[21]' (FDE) to 'SDTOP/isdl/card_function_check_reg[23]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[14]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[15]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_function_check_reg[22]' (FDE) to 'SDTOP/isdl/card_function_check_reg[23]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[15]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[16]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[16]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[17]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_function_caps_reg[0]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[17]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[17]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[18]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_function_caps_reg[1]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[43]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_cid_reg[0]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[43]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_csd_reg[0]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[43]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[18]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[19]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[19]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[20]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[20]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[21]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[21]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[22]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[22]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[23]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[23]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[24]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[24]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[25]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[25]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[26]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[26]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[27]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[27]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[28]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[28]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[29]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[29]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[30]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[30]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[31]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[31]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[32]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[32]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[33]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[33]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[34]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[34]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[35]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[35]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[36]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[36]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[37]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[37]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[38]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[38]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[39]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[39]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[40]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[40]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[41]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[41]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[42]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[42]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[44]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[43]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[57]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[44]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[45]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[45]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[46]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[46]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[47]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[47]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[48]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[48]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[49]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[49]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[50]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[50]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[51]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[51]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[52]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[52]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[53]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[53]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[54]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[54]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[55]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[55]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[56]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[56]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[58]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[57]' (FDE) to 'SDTOP/isdl/card_cid_reg[1]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[58]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[59]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[59]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[60]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[60]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[61]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[61]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[62]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[62]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[63]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[63]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[64]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_scr_reg[0]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[64]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[64]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[65]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_scr_reg[1]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[65]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[65]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[66]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_scr_reg[2]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[66]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_sd_status_reg[66]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[67]'
+INFO: [Synth 8-3886] merging instance 'SDTOP/isdl/card_scr_reg[3]' (FDE) to 'SDTOP/isdl/card_sd_status_reg[67]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\SDTOP/isdl /\resp_arg_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SDTOP/isdl /\card_status_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SDTOP/isdl /\card_ocr_reg[29] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\SDTOP/isdl /\card_ocr_reg[30] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\SDTOP/isdl /\card_cid_reg[126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SDTOP/isdl /\card_status_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SDTOP/isdl /\resp_arg_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SDTOP/isdl /\card_cid_reg[127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SDTOP/isdl /\phy_data_out_len_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SDTOP/isdl /\phy_data_out_reg_reg[375] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SDTOP/isdl /phy_resp_busy_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SDTOP/isdl /\phy_resp_out_reg[135] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SDTOP/isdl /\phy_data_out_reg_reg[479] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SDTOP/isdl /\phy_resp_out_reg[87] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\SDTOP/isdl /\phy_resp_out_reg[88] )
+WARNING: [Synth 8-3332] Sequential element (a/stage_3_reg[0]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (c/stage_3_reg[0]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (e/stage_3_reg[0]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (g/stage_3_reg[0]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (i/stage_3_reg[0]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (cmd_in_latch_reg[7]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (cmd_in_latch_reg[6]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (cmd_in_latch_reg[5]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (cmd_in_latch_reg[4]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (cmd_in_latch_reg[3]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (cmd_in_latch_reg[2]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (cmd_in_latch_reg[1]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (cmd_in_latch_reg[0]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (card_erase_state_reg[2]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (card_status_reg[30]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (card_status_reg[25]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (card_ocr_reg[30]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (card_ocr_reg[29]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (resp_arg_reg[31]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (resp_arg_reg[8]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (phy_resp_out_reg[88]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (phy_resp_out_reg[87]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (phy_resp_busy_reg) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (card_function_reg[23]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (card_function_reg[22]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (card_function_reg[21]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (card_function_reg[20]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (card_function_reg[19]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (card_function_reg[18]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (card_function_reg[17]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (card_function_reg[16]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (card_function_reg[15]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (card_function_reg[14]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (card_function_reg[13]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (card_function_reg[12]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (card_function_reg[11]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (card_function_reg[10]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (card_function_reg[9]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (card_function_reg[8]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (card_function_reg[7]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (card_function_reg[6]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (card_function_reg[5]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (card_function_reg[4]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (card_function_reg[3]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (phy_data_out_reg_reg[479]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (phy_data_out_len_reg[8]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (card_cid_reg[127]) is unused and will be removed from module sd_link.
+WARNING: [Synth 8-3332] Sequential element (card_cid_reg[126]) is unused and will be removed from module sd_link.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SDTOP/isdph /bram_rd_sd_wren_reg)
+WARNING: [Synth 8-3332] Sequential element (bram_rd_sd_wren_reg) is unused and will be removed from module sd_phy.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg_latch_reg[512]) is unused and will be removed from module sd_phy.
+WARNING: [Synth 8-3332] Sequential element (i/stage_3_reg[0]) is unused and will be removed from module sd_phy.
+WARNING: [Synth 8-3332] Sequential element (j/stage_3_reg[0]) is unused and will be removed from module sd_phy.
+WARNING: [Synth 8-3332] Sequential element (f/stage_3_reg[0]) is unused and will be removed from module sd_phy.
+WARNING: [Synth 8-3332] Sequential element (h/stage_3_reg[0]) is unused and will be removed from module sd_phy.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:58 . Memory (MB): peak = 1534.168 ; gain = 372.551 ; free physical = 1882 ; free virtual = 25929
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name       | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|sd_bram_block_dp: | mem_reg    | 256 x 32(WRITE_FIRST)  | W | R | 256 x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|sd_bram_block_dp: | mem_reg    | 256 x 32(WRITE_FIRST)  | W | R | 256 x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
++------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The tale above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM SDTOP/isdm/isdb1/mem_reg to conserve power
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:59 . Memory (MB): peak = 1534.172 ; gain = 372.555 ; free physical = 1882 ; free virtual = 25928
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name       | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|sd_bram_block_dp: | mem_reg    | 256 x 32(WRITE_FIRST)  | W | R | 256 x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
+|sd_bram_block_dp: | mem_reg    | 256 x 32(WRITE_FIRST)  | W | R | 256 x 32(WRITE_FIRST)  | W | R | Port A and B     | 0      | 1      | 
++------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (SDTOP/isdw/bytes_done_reg[0]) is unused and will be removed from module sd_over_the_top.
+WARNING: [Synth 8-3332] Sequential element (SDTOP/isdw/bytes_done_reg[1]) is unused and will be removed from module sd_over_the_top.
+INFO: [Synth 8-4480] The timing for the instance SDTOP/isdm/isdb1/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance SDTOP/isdm/isdb2/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance SDTOP/isdm/isdb2/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:01:01 . Memory (MB): peak = 1534.172 ; gain = 372.555 ; free physical = 1882 ; free virtual = 25928
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:01:02 . Memory (MB): peak = 1534.172 ; gain = 372.555 ; free physical = 1881 ; free virtual = 25928
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:01:02 . Memory (MB): peak = 1534.172 ; gain = 372.555 ; free physical = 1881 ; free virtual = 25928
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:01:02 . Memory (MB): peak = 1534.172 ; gain = 372.555 ; free physical = 1882 ; free virtual = 25928
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:01:02 . Memory (MB): peak = 1534.172 ; gain = 372.555 ; free physical = 1882 ; free virtual = 25928
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:01:02 . Memory (MB): peak = 1534.172 ; gain = 372.555 ; free physical = 1882 ; free virtual = 25928
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:01:02 . Memory (MB): peak = 1534.172 ; gain = 372.555 ; free physical = 1882 ; free virtual = 25928
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++----------------+-----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name     | RTL Name              | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++----------------+-----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|sd_link         | c/o_reg[0]            | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sd_link         | d/o_reg[0]            | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sd_link         | e/o_reg[0]            | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sd_link         | f/o_reg[0]            | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sd_link         | g/o_reg[0]            | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sd_link         | h/o_reg[0]            | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sd_link         | i/o_reg[0]            | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sd_link         | j/o_reg[0]            | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sd_phy          | a/o_reg[0]            | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sd_phy          | i/o_reg[0]            | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sd_phy          | j/o_reg[0]            | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sd_phy          | b/o_reg[0]            | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sd_phy          | e/o_reg[0]            | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sd_phy          | f/o_reg[0]            | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sd_phy          | h/o_reg[0]            | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sd_phy          | g/o_reg[3]            | 3      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|sd_phy          | c/o_reg[3]            | 3      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|sd_phy          | d/o_reg[9]            | 3      | 10    | NO           | NO                 | YES               | 10     | 0       | 
+|sd_phy          | crc16_out1_reg[15]    | 4      | 2     | YES          | NO                 | YES               | 2      | 0       | 
+|sd_phy          | crc16_out1_reg[11]    | 7      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|sd_phy          | crc16_out2_reg[15]    | 4      | 2     | YES          | NO                 | YES               | 2      | 0       | 
+|sd_phy          | crc16_out2_reg[11]    | 7      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|sd_phy          | crc16_out3_reg[15]    | 4      | 2     | YES          | NO                 | YES               | 2      | 0       | 
+|sd_phy          | crc16_out3_reg[11]    | 7      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|sd_over_the_top | SDTOP/isdw/a/o_reg[0] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sd_over_the_top | SDTOP/isdm/b/o_reg[0] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++----------------+-----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |    89|
+|3     |LUT1     |    79|
+|4     |LUT2     |   215|
+|5     |LUT3     |   396|
+|6     |LUT4     |   172|
+|7     |LUT5     |   846|
+|8     |LUT6     |   463|
+|9     |MUXF7    |    23|
+|10    |RAMB36E1 |     2|
+|11    |SRL16E   |    44|
+|12    |FDCE     |     6|
+|13    |FDCE_1   |     4|
+|14    |FDC_1    |     3|
+|15    |FDRE     |  1844|
+|16    |FDSE     |    86|
+|17    |IBUF     |    41|
+|18    |OBUF     |    87|
++------+---------+------+
+
+Report Instance Areas: 
++------+------------+--------------------------+------+
+|      |Instance    |Module                    |Cells |
++------+------------+--------------------------+------+
+|1     |top         |                          |  4402|
+|2     |  SDTOP     |sd_top                    |  4272|
+|3     |    isdl    |sd_link                   |  1287|
+|4     |      a     |synch_3_10                |     4|
+|5     |      c     |synch_3_11                |     3|
+|6     |      d     |synch_3_12                |    12|
+|7     |      e     |synch_3_13                |     7|
+|8     |      f     |synch_3_14                |    15|
+|9     |      g     |synch_3_15                |    10|
+|10    |      h     |synch_3_16                |    50|
+|11    |      i     |synch_3_17                |    93|
+|12    |      j     |synch_3_18                |    18|
+|13    |    isdph   |sd_phy                    |  2429|
+|14    |      a     |synch_3_2                 |    18|
+|15    |      b     |synch_3_3                 |    10|
+|16    |      c     |synch_3__parameterized1   |    29|
+|17    |      d     |synch_3__parameterized2   |    30|
+|18    |      e     |synch_3_4                 |     9|
+|19    |      f     |synch_3_5                 |    15|
+|20    |      g     |synch_3__parameterized1_6 |    10|
+|21    |      h     |synch_3_7                 |   666|
+|22    |      i     |synch_3_8                 |    27|
+|23    |      j     |synch_3_9                 |     2|
+|24    |    isdm    |sd_mgr                    |   317|
+|25    |      b     |synch_3_0                 |    24|
+|26    |      isdb1 |sd_bram_block_dp          |     1|
+|27    |      isdb2 |sd_bram_block_dp_1        |     1|
+|28    |    isdw    |sd_wishbone               |   239|
+|29    |      a     |synch_3                   |     3|
++------+------------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:01:02 . Memory (MB): peak = 1534.172 ; gain = 372.555 ; free physical = 1882 ; free virtual = 25928
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 480 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:01:02 . Memory (MB): peak = 1534.172 ; gain = 372.555 ; free physical = 1884 ; free virtual = 25931
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:01:02 . Memory (MB): peak = 1534.176 ; gain = 372.555 ; free physical = 1884 ; free virtual = 25931
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 162 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 9 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  FDCE_1 => FDCE (inverted pins: C): 4 instances
+  FDC_1 => FDCE (inverted pins: C): 3 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+372 Infos, 249 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:01:06 . Memory (MB): peak = 1638.195 ; gain = 489.945 ; free physical = 1905 ; free virtual = 25952
+INFO: [Common 17-1381] The checkpoint '/home/torbjorn/development/vhdl/cifra/sd_slave/sd_slave_vhdl/sd_slave_vhdl.runs/synth_1/sd_over_the_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file sd_over_the_top_utilization_synth.rpt -pb sd_over_the_top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1662.215 ; gain = 0.000 ; free physical = 1902 ; free virtual = 25950
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 23 14:09:38 2017...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Thu Nov 23 14:08:19 2017
+# Process ID: 7773
+# Current directory: /home/torbjorn/development/vhdl/cifra/sd_slave/sd_slave_vhdl/sd_slave_vhdl.runs/synth_1
+# Command line: vivado -log sd_over_the_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sd_over_the_top.tcl
+# Log file: /home/torbjorn/development/vhdl/cifra/sd_slave/sd_slave_vhdl/sd_slave_vhdl.runs/synth_1/sd_over_the_top.vds
+# Journal file: /home/torbjorn/development/vhdl/cifra/sd_slave/sd_slave_vhdl/sd_slave_vhdl.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source sd_over_the_top.tcl -notrace

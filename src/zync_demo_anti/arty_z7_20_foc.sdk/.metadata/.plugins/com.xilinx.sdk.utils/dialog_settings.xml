@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="B:\SVN\cores\customers\zifra\zybo\zybo_foc\sw\arty" key="bootgen_files_selection"/>
+	<item value="B:\SVN\cores\customers\zifra\zybo\zybo_foc\arty_z7_20_foc.sdk\fsbl\Debug" key="zynq_flash_files_selection"/>
+	<item value="B:\SVN\cores\customers\zifra\zybo\zybo_foc\sw\arty" key="last_stored_selection"/>
+</section>

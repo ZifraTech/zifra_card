@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]B:\SVN\cores\customers\zifra\zybo\zybo_foc\arty_z7_20_foc.sdk\fsbl\Debug\fsbl.elf
+	B:\SVN\cores\customers\zifra\zybo\zybo_foc\arty_z7_20_foc.runs\impl_1\zsys_wrapper.bit
+	B:\SVN\cores\customers\zifra\zybo\zybo_foc\sw\arty\u-boot.elf
+}
