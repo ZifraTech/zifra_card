@@ -1,15 +1,14 @@
-\BOOKMARK [1][-]{section.1}{todo}{}% 1
-\BOOKMARK [1][-]{section.2}{Brief description}{}% 2
-\BOOKMARK [1][-]{section.3}{System overview}{}% 3
-\BOOKMARK [2][-]{subsection.3.1}{Key generation}{section.3}% 4
-\BOOKMARK [2][-]{subsection.3.2}{Encryption}{section.3}% 5
-\BOOKMARK [2][-]{subsection.3.3}{Decryption}{section.3}% 6
-\BOOKMARK [1][-]{section.4}{Hardware}{}% 7
-\BOOKMARK [1][-]{section.5}{sd slave progress}{}% 8
-\BOOKMARK [1][-]{section.6}{chacha}{}% 9
-\BOOKMARK [1][-]{section.7}{Helpful data}{}% 10
-\BOOKMARK [2][-]{subsection.7.1}{CSD list}{section.7}% 11
-\BOOKMARK [1][-]{section.8}{Whishlist}{}% 12
-\BOOKMARK [2][-]{subsection.8.1}{Hidden files}{section.8}% 13
-\BOOKMARK [2][-]{subsection.8.2}{See pictures when camera is still on}{section.8}% 14
-\BOOKMARK [2][-]{subsection.8.3}{Fake pictures}{section.8}% 15
+\BOOKMARK [1][-]{section.1}{Brief description}{}% 1
+\BOOKMARK [1][-]{section.2}{System overview}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Key generation}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Encryption}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Decryption}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Hardware}{}% 6
+\BOOKMARK [1][-]{section.4}{sd slave progress}{}% 7
+\BOOKMARK [1][-]{section.5}{chacha}{}% 8
+\BOOKMARK [1][-]{section.6}{Helpful data}{}% 9
+\BOOKMARK [2][-]{subsection.6.1}{CSD list}{section.6}% 10
+\BOOKMARK [1][-]{section.7}{Whishlist}{}% 11
+\BOOKMARK [2][-]{subsection.7.1}{Hidden files}{section.7}% 12
+\BOOKMARK [2][-]{subsection.7.2}{See pictures when camera is still on}{section.7}% 13
+\BOOKMARK [2][-]{subsection.7.3}{Fake pictures}{section.7}% 14

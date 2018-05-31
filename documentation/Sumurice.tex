@@ -67,21 +67,21 @@
 \newpage
 
 \begin{abstract}
-This document will summarize have bin done and what is needed to do to get to the final product.
+This document is meant to clarify what have bin don and what is needed to be don.
 \end{abstract}
 
 \newpage
 
 
-\section{todo}
-Here i will list stuff i come up whit so that i can write about them later.
+%\section{todo}
+%Here i will list stuff i come up whit so that i can write about them later.
 
-\begin{itemize}
-	\item crypto scheem whit curv 25519
-	\item Alex algorithm
-	\item hiding files in fat
-	\item fat format
-\end{itemize}
+%\begin{itemize}
+%	\item crypto scheem whit curv 25519
+%	\item Alex algorithm
+%	\item hiding files in fat
+%	\item fat format
+%\end{itemize}
 
 
 
@@ -168,11 +168,15 @@ There is an test bench that show how the axi block is intended to bee used.
 This section will list information that have bin collected during the project that might help further development.
 
 \subsection{CSD list}
-During the debugging we listed the CSD values that was used in the \gls{gvsdslave} we also made an list of the other CSD values.
-\todo{add the CSD tables here}
+During the debugging we listed the CSD values that was used in the \gls{gvsdslave} we also made an list of the other CSD and CID values.
+We list the CSD list 1.0, 2.0 and the CID list also the original CSD settings from the Google Vault.
 
+\begin{table}[h]
+\centering
+\resizebox{\columnwidth}{!}{%
 \begin{tabular}{|l|l|l|}
 	&This is the list from part1 Version (1.0)& \\
+	\hline
 	&& \\
 	Name &Descripton&CSD-slice \\
 	CSD structure&CSD structure&[127:126] \\
@@ -210,10 +214,18 @@ During the debugging we listed the CSD values that was used in the \gls{gvsdslav
 	-&reserved&[9:8] \\
 	CRC&crc&[7:1] \\
 	-&not used always '1'&[0:0] \\
-\end{tabular}
+\end{tabular}%
+}
+\caption{Table shows CSD list Version 1.0}
+\label{table:cs12.0}
+\end{table}
 
+\begin{table}[h]
+\centering
+\resizebox{\columnwidth}{!}{%
 \begin{tabular}{|l|l|l|}
 &This is the list from part1 Version (2.0)& \\
+\hline
 && \\
 Name &Descripton&CSD-slice \\
 CSD structure&CSD structure&[127:126] \\
@@ -247,11 +259,19 @@ FILE\_FORMAT\_GRP&file format&[11:10] \\
 -&reserved&[9:8] \\
 CRC&crc&[7:1] \\
 -&not used always '1'&[0:0] \\
-\end{tabular}
+\end{tabular}%
+}
+\caption{Table shows CSD list Version 2.0}
+\label{table:csd2.0}
+\end{table}
 
+
+\begin{table}[h]
+\centering
+\resizebox{\columnwidth}{!}{%
 \begin{tabular}{l|l|l|l}
-
 	&Settings from GV sd\_parms.vh&& \\
+	\hline
 	&&& \\
 	Name&Value&&Comment \\
 	CSD\_CSD\_STRUCTURE&b01&& \\
@@ -287,12 +307,37 @@ CRC&crc&[7:1] \\
 	CMD9\_SEND\_CSD&d9&& \\
 	CMD27\_PROGRAM\_CSD&d27&& \\
 	STAT\_CSD\_OVERWRITE&d16&& \\
-	
-	
-\end{tabular}
+\end{tabular}%
+}
+\caption{This is the CSD settings that was originally in the Google Vault project. }
+\label{table:gvCsd}
+\end{table}
 
-\todo{add cid by hand}
+\begin{table}[h]
+	\centering
+	\resizebox{\columnwidth}{!}{%
+	\begin{tabular}{l|l|l|l}
+		
+	Name&Field &Width&CID-slice \\
+	\hline
+	&&& \\
+	Manufactire ID&MID&8&[127:120] \\
+	OEM/Application ID&OID&16&[119:104] \\
+	Product name&PNM&40&[103:64] \\
+	Prodict revision&PRV&8&[63:56] \\
+	Product serial number&PSN&32&[55:24] \\
+	reserved&--&4&[23:20] \\
+	Manufacturing date&MDT&12&[19:8] \\
+	CRC7 checksum&CRC&7&[7:1] \\
+	"not used, always 1"&-&1&[0:0] 
+		
+	\end{tabular}%
+	}
+	\caption{This table shows the CID list}
+	\label{table:cidList}
+\end{table}
 
+\clearpage
 
 \section{Whishlist}
 Here we will list some features that we wold like to have in the future.
