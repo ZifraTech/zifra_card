@@ -151,6 +151,44 @@ We have extracted the blocks that we think are needed fore the project.
 There test bench to test and send commands to the design and see what responses the device sends back.
 So fare we can read and write from the first sector in the memory but not to any other sector.
 
+\subsection{Development environment}
+
+Here I will state the steps to get the debugging platform working.
+The system is designed fore the arty z7 board.
+
+Firs start the Vivado project.
+Second we need to sett the board to jtag boot mode this is don whit an jumper on the board.
+Follow this whit an power chicle.
+Open hardware manager and open target.
+Right click on the FPGA to add configuration memory device\footnote{If this dose not work it might mean that you might need to remove an old one, right click on the memory and choose remove}.
+\begin{table}
+	\centering
+	\begin{tabular}{l|r}
+		Function		& Setting		\\
+		\hline
+		Manufacturer	& Spansion  	\\ 
+		Settings 		& Value  		\\ 
+		Density  		& 256  			\\ 
+		Type 			& qspi  		\\ 
+		Width 			& x4-single  	
+	\end{tabular}
+	\caption{This table includes settings fore configuring the memory on the artyz7 board.}
+	\label{table:memorySettings}
+\end{table}
+
+This produces two results we pick the \emph{3.3V} version and press ok.
+Vivado now asks if we want to program it we say ok.
+Now we need to pick the \emph{.elf} and \emph{boot.bin} files.
+The boot.bin lives in the root of the project. 
+And the \emph{fsbl.elf} file resides in \texttt{*.sdk\textbackslash fsbl\textbackslash Debug}.
+Then program.
+Sett boot jumper to spi mode and power cycle.
+
+Then I used minicom\footnote{minicom is an text based terminal emulator} to connect to the system boudrate 115200.
+mmc info shuld give info about the device.
+Use \texttt{read mmc 0 0 1} to read first sector and \texttt{write mmc 0 0 1} to write first sector.
+
+
 \section{chacha}
 The stream cipher that was decided to use fore the data encryption ip called chacha \cite{chacha} developed by Joachim Strömbergson \cite{joachim}.  
 We have made an axi ip block out of it one stream port fore the data and one address port fore the setting example iv and key se Figure \ref{fig:chacha}.

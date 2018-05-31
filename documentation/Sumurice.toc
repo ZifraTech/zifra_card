@@ -5,10 +5,11 @@
 \contentsline {subsection}{\numberline {2.3}Decryption}{6}{subsection.2.3}
 \contentsline {section}{\numberline {3}Hardware}{6}{section.3}
 \contentsline {section}{\numberline {4}sd slave progress}{6}{section.4}
+\contentsline {subsection}{\numberline {4.1}Development environment}{7}{subsection.4.1}
 \contentsline {section}{\numberline {5}chacha}{7}{section.5}
 \contentsline {section}{\numberline {6}Helpful data}{7}{section.6}
-\contentsline {subsection}{\numberline {6.1}CSD list}{7}{subsection.6.1}
-\contentsline {section}{\numberline {7}Whishlist}{11}{section.7}
-\contentsline {subsection}{\numberline {7.1}Hidden files}{11}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}See pictures when camera is still on}{11}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Fake pictures}{11}{subsection.7.3}
+\contentsline {subsection}{\numberline {6.1}CSD list}{8}{subsection.6.1}
+\contentsline {section}{\numberline {7}Whishlist}{12}{section.7}
+\contentsline {subsection}{\numberline {7.1}Hidden files}{12}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}See pictures when camera is still on}{12}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Fake pictures}{12}{subsection.7.3}
