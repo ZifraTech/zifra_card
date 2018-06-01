@@ -23,6 +23,10 @@ Run simulation fore 2500 ns.
 If everithing is corect chacha will encrypt two data words and decrypt them afterwords.
 Se wawe pattern.
 
+## Sd Slavetest
+There is an sd slave test envirement where you can send mcc request to the sd-slave from terminal emulator.
+Fore more detail se documentation.
+
 ## Deployment
 
 Add additional notes about how to deploy this on a live system
