@@ -56,13 +56,10 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 The project was funded through **Chalmers Ventures** and **Startup Reykjavik Invest** who very generously waived there claims on the code for the benefit of this project.
 
-## License
-
-BSD (Lämnar mer frihet till att ändra licensen senare jämfört med GPL) eller GPL (Smittsam som satan vilket tvingar projeket till att vara open source)
 
 ## Acknowledgments
 
---TODO we should add Joachim here. Need to talk to him about that.
+--TODO
 
 ## Disclaimer
 
